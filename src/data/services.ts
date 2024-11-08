@@ -20,9 +20,9 @@ const services: IServiceItem[] = [
     id: 2,
     title: "Web Development",
     icons: [
-      "/skills/redux.svg",
-      "/skills/react.svg",
+      "/skills/Node.js_logo.svg",
       "/skills/nextjs.png",
+      "/skills/react.svg",
       "/skills/html.svg",
       "/skills/css.svg",
     ],
@@ -46,18 +46,18 @@ const services: IServiceItem[] = [
   },
   {
     id: 4,
-    title: "Product Strategy",
+    title: "Graphics Design",
     icons: [
-      "/skills/git.svg",
-      "/images/collaboration.png",
-      "/images/logical-thinking.png",
-      "/images/analytical-skills.png",
-      "/skills/ubuntu.png",
+      "/skills/DaVinci_Resolve_Studio.png",
+      "/skills/illustrator.png",
+      "/skills/photoshop.png",
+      "/skills/aftereffects.svg",
+      "/skills/canva.png",
     ],
     shortDescription:
-      "I define goals, target audiences, and roadmap for success.",
+      "I craft visuals that captivate, communicate, and inspire.",
     description:
-      "I collaborate to define clear goals, target audiences, and a success roadmap. My expertise in product ideation and market analysis ensures your product meets user needs and aligns with your business strategy for long-term growth and full potential realization. Drive your product's success with strategic planning.",
+      "I work closely with clients to create visually stunning designs that tell a story and engage audiences. With a strong foundation in visual storytelling, branding, and design principles, I ensure that each project not only looks great but also achieves your brand's objectives. Elevate your brand's presence with creative, impactful design solutions.",
   },
   {
     id: 5,
@@ -80,7 +80,7 @@ const services: IServiceItem[] = [
       "/skills/mysql.svg",
       "/skills/postgresql.svg",
       "/skills/mongodb.svg",
-      "/skills/redis.svg",
+      "/skills/PHP-logo.svg",
       "/skills/sqlite.svg",
     ],
     shortDescription: "I manage and optimize your database systems.",

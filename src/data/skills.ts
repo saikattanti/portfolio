@@ -154,6 +154,11 @@ const skills: ISkillListItem[] = [
         level: SkillLevel.Intermediate,
         icon: "/skills/ubuntu.png",
       },
+      {
+        title: "Kali Linux",
+        level: SkillLevel.Expert,
+        icon: "/skills/kalilinux.png",
+      },
     ],
   },
   {
@@ -173,6 +178,36 @@ const skills: ISkillListItem[] = [
         title: "Analytical Skills",
         level: SkillLevel.Expert,
         icon: "/images/analytical-skills.png",
+      },
+    ],
+  },
+  {
+    title: "graphics Design",
+    items: [
+      {
+        title: "Photoshop",
+        level: SkillLevel.Expert,
+        icon: "/skills/photoshop.png",
+      },
+      {
+        title: "After Effects",
+        level: SkillLevel.Expert,
+        icon: "/skills/aftereffects.svg",
+      },
+      {
+        title: "Illustrator",
+        level: SkillLevel.Expert,
+        icon: "/skills/illustrator.png",
+      },
+      {
+        title: "The Vinci Resolve",
+        level: SkillLevel.Expert,
+        icon: "/skills/DaVinci_Resolve_Studio.png",
+      },
+      {
+        title: "Canva",
+        level: SkillLevel.Expert,
+        icon: "/skills/canva.png",
       },
     ],
   },
