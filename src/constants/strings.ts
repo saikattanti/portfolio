@@ -4,16 +4,16 @@ class Strings {
   static telegramUsername = "Saikat Tanti";
 
   static github = "GitHub";
-  static githubLink = "https://github.com/saikat-tanti";
-  static githubUsername = "saikat-tanti";
+  static githubLink = "https://github.com/saikattanti";
+  static githubUsername = "saikattanti";
 
   static linkedIn = "LinkedIn";
   static linkedInLink = "https://www.linkedin.com/in/saikat-tanti-7375b2233/";
-  static linkedInUsername = "Saikat tanti";
+  static linkedInUsername = "Saikat Tanti";
 
   static instagram = "Instagram";
-  static instagramLink = "https://www.instagram.com/saikattanti1/";
-  static instagramUsername = "saikattanti1";
+  static instagramLink = "https://www.instagram.com/saikattanti.dev/";
+  static instagramUsername = "saikattanti.dev";
 
   static twitter = "Twitter";
   static twitterLink = "https://x.com/TantiSaikat";
