@@ -78,12 +78,11 @@ export interface ISkillItem {
 }
 
 export interface ISocialLinkItem {
+  name: string;
   url: string;
-  icon: IconDefinition | string;
+  icon: any;
   text: string;
-  name?: string;
 }
-
 export interface MenuItemProps {
   items: INavMenuItem;
   depthLevel: number;

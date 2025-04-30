@@ -21,6 +21,7 @@ const HomeSection6 = ({ id }: { id: string }) => {
               return (
                 <SocialButton
                   key={`social-link-${index}`}
+                  name={link.name}
                   text={link.text}
                   icon={link.icon}
                   url={link.url}

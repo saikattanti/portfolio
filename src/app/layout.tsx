@@ -25,7 +25,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Saikat Tanti",
+  title: "Saikat Tanti - Software Engineer",
   description:
     "Saikat Tanti is a proficient Software Engineer and Full Stack Developer from India, skilled in front-end and back-end development using modern tech stacks.",
   robots: {
@@ -100,7 +100,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
 
       <body className={isDebug ? "debug-screens" : ""}>
         {isDebug ? <WebVitals /> : null}
-        <FloatingNavbar className="app_nav" navItems={navMenus} />
+        {/* <FloatingNavbar className="app_nav" navItems={navMenus} /> */}
         <main>{children}</main>
         <ScrollToTop />
       </body>
