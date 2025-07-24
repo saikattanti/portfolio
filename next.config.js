@@ -5,6 +5,7 @@ const { withSentryConfig } = require("@sentry/nextjs");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: 'standalone', // Enable standalone output for Docker
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "**.githubusercontent.com" },

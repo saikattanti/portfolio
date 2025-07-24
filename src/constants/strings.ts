@@ -12,8 +12,8 @@ class Strings {
   static linkedInUsername = "Saikat Tanti";
 
   static instagram = "Instagram";
-  static instagramLink = "https://www.instagram.com/saikattanti.dev/";
-  static instagramUsername = "saikattanti.dev";
+  static instagramLink = "https://www.instagram.com/saikattanti.xyz/";
+  static instagramUsername = "saikattanti.xyz";
 
   static twitter = "Twitter";
   static twitterLink = "https://x.com/TantiSaikat";

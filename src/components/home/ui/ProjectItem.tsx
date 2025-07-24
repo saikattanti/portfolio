@@ -4,97 +4,130 @@ import { RepoType, type IProjectItem } from "@/types";
 import { Balancer } from "react-wrap-balancer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
-import Column from "@/components/core/Column";
-import Row from "@/components/core/Row";
-import CardBox from "@/components/core/CardBox";
+import { useState } from "react";
 
 const ProjectItem = ({ project }: { project: IProjectItem }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <CardBox classNames="min-w-[calc(100%-2rem)] sm:min-w-[25rem] md:min-w-[28rem] aspect-[3/5] max-h-[30rem] p-4 gap-8 items-center justify-between rounded-[var(--borderRadius)] border border-[rgba(255,255,255,0.10)] dark:bg-[var(--primaryColor5)] bg-[var(--primaryColor5)] shadow-[2px_4px_16px_0px_rgba(100,100,100,0.06)_inset] group slide_in">
-      <Column classNames="w-full items-center justify-start">
-        <Row classNames="w-[2.5rem] md:w-[3rem] aspect-square items-center justify-center">
-          <Image
-            src={project.icon}
-            alt={`project-${project.title}`}
-            width={100}
-            height={100}
-            sizes="100%"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL={project.icon}
-            className="w-full h-full object-cover aspect-square"
-          />
-        </Row>
-
-        <p className="text-lg/6 font-semibold mt-4">{project.title}</p>
-
-        <div
-          className={`flex flex-row items-center justify-center rounded-full py-[0.05] px-[0.5rem] mt-4 capitalize text-center border ${
-            project.repoType === RepoType.Private
-              ? "text-[var(--errorColor)] border-[var(--errorColor50)]"
-              : "text-[var(--successColor)] border-[var(--successColor50)]"
-          }`}
-        >
-          <p className="text-xs/6 font-semibold">
-            {project.repoType === RepoType.Private ? "Private" : "Public"}
-          </p>
+    <div 
+      className="group relative min-w-[calc(100%-2rem)] sm:min-w-[18rem] md:min-w-[20rem] h-[24rem] rounded-xl overflow-hidden bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-[1.01] hover:shadow-xl hover:shadow-purple-500/5"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Animated gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/3 via-purple-500/3 to-pink-500/3 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      
+      {/* Content Container */}
+      <div className="relative z-10 h-full flex flex-col p-4">
+        
+        {/* Header Section */}
+        <div className="flex items-center gap-3 mb-3">
+          <div className="relative w-10 h-10 rounded-lg bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+            <Image
+              src={project.icon}
+              alt={`${project.title} icon`}
+              width={20}
+              height={20}
+              className="w-5 h-5 object-contain"
+            />
+          </div>
+          
+          <div className="flex-1">
+            <h3 className="text-base font-semibold text-white mb-1 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 group-hover:bg-clip-text transition-all duration-300">
+              {project.title}
+            </h3>
+            
+            <div className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border transition-all duration-300 ${
+              project.repoType === RepoType.Private
+                ? "text-red-400 border-red-400/30 bg-red-400/10"
+                : "text-emerald-400 border-emerald-400/30 bg-emerald-400/10"
+            }`}>
+              <div className={`w-1 h-1 rounded-full mr-1 ${
+                project.repoType === RepoType.Private ? "bg-red-400" : "bg-emerald-400"
+              } ${isHovered ? 'animate-pulse' : ''}`} />
+              {project.repoType === RepoType.Private ? "Private" : "Public"}
+            </div>
+          </div>
         </div>
 
-        <Row classNames="w-full items-center justify-center mt-4 gap-2">
-          {project.githubUrl ? (
+        {/* Description */}
+        <div className="flex-1 mb-4">
+          <Balancer>
+            <p className="text-gray-300 text-xs leading-relaxed line-clamp-3 group-hover:text-gray-200 transition-colors duration-300">
+              {project.description}
+            </p>
+          </Balancer>
+        </div>
+
+        {/* Tech Stack Tags */}
+        <div className="mb-4">
+          <div className="flex flex-wrap gap-1.5 max-h-12 overflow-hidden">
+            {project.tags?.slice(0, 4).map((tag, index) => (
+              <span
+                key={tag}
+                className="px-2 py-0.5 text-xs font-medium rounded-md bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-white/10 text-gray-300 hover:text-white hover:border-white/20 transition-all duration-300"
+              >
+                {tag}
+              </span>
+            ))}
+            {project.tags && project.tags.length > 4 && (
+              <span className="px-2 py-0.5 text-xs font-medium rounded-md bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-white/10 text-gray-400">
+                +{project.tags.length - 4}
+              </span>
+            )}
+          </div>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex gap-2">
+          {project.githubUrl && (
             <Link
               href={project.githubUrl}
-              aria-label={`${project.title} GitHub URL`}
               target="_blank"
-              className="app__outlined_btn !rounded-full !p-2 lg:!p-3 !aspect-square !border-[var(--textColor)]"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm border border-white/10 text-gray-300 hover:text-white hover:border-white/20 hover:from-white/15 hover:to-white/10 transition-all duration-300 group/btn"
             >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="text-base/6 text-[var(--textColor)]"
+              <FontAwesomeIcon 
+                icon={faGithub} 
+                className="w-3 h-3 group-hover/btn:scale-110 transition-transform duration-200" 
               />
+              <span className="text-xs font-medium">Code</span>
             </Link>
-          ) : null}
-
-          {project.url ? (
+          )}
+          
+          {project.url && (
             <Link
               href={project.url}
-              aria-label={`${project.title} Project URL`}
               target="_blank"
-              className="app__outlined_btn !rounded-full !p-2 lg:!p-3 !aspect-square !border-[var(--textColor)]"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-400/30 text-blue-300 hover:text-white hover:border-blue-400/50 hover:from-blue-500/30 hover:to-purple-500/30 transition-all duration-300 group/btn"
             >
-              <FontAwesomeIcon
-                icon={faEye}
-                className="text-base/6 text-[var(--textColor)]"
+              <FontAwesomeIcon 
+                icon={faArrowUpRightFromSquare} 
+                className="w-3 h-3 group-hover/btn:scale-110 transition-transform duration-200" 
               />
+              <span className="text-xs font-medium">Live</span>
             </Link>
-          ) : null}
-        </Row>
-      </Column>
+          )}
+        </div>
 
-      <Column classNames="w-full items-center">
-        <p className="text-center text-base/6">
-          <Balancer>{project.description}</Balancer>
-        </p>
+        {/* Hover Effect Glow */}
+        <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-lg" />
+      </div>
 
-        {project.tags && project.tags.length > 0 ? (
-          <Row classNames="w-full items-center justify-center flex-wrap mt-4">
-            {project.tags.map((tag, i) => {
-              return (
-                <p
-                  key={`tag-${i}`}
-                  className="rounded-[var(--borderRadius)] border border-[var(--textColor50)] py-[.125rem] px-2 mr-2 mb-2 text-xs/6 font-normal"
-                >
-                  {tag}
-                </p>
-              );
-            })}
-          </Row>
-        ) : null}
-      </Column>
-    </CardBox>
+      <style jsx>{`
+        .line-clamp-3 {
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      `}</style>
+    </div>
   );
 };
 

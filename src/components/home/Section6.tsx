@@ -4,12 +4,13 @@ import GridBox from "@/components/core/GridBox";
 import Column from "@/components/core/Column";
 import SectionTitle from "@/components/common/SectionTitle";
 import SocialButton from "./ui/SocialButton";
+import SpectrumFooter from "@/components/common/SpectrumFooter";
 import socialLinks from "@/data/socialLinks";
 
 const HomeSection6 = ({ id }: { id: string }) => {
   return (
     <ResponsiveBox
-      classNames="dark:bg-[var(--dialogColor)] bg-[var(--dialogColor)] min-h-screen items-center justify-center dark:bg-dot-white/[0.15] bg-dot-white/[0.15] items-center justify-center"
+      classNames="dark:bg-[var(--bgColor)] bg-[var(--bgColor)] min-h-screen items-center justify-center dark:bg-dot-white/[0.02] bg-dot-white/[0.1] items-center justify-center"
       id={id}
     >
       <ConstrainedBox classNames="p-4 py-16">
@@ -37,6 +38,9 @@ const HomeSection6 = ({ id }: { id: string }) => {
           </p>
         </Column>
       </ConstrainedBox>
+      
+      {/* Spectrum UI Inspired Footer */}
+      <SpectrumFooter />
     </ResponsiveBox>
   );
 };

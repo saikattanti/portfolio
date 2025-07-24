@@ -7,10 +7,9 @@ const PaymentMainSection = dynamic(
 
 const Home = () => {
   return (
-    // <PageBox>
-    //   <PaymentMainSection />
-    // </PageBox>
-    <div></div>
+    <PageBox>
+      <PaymentMainSection />
+    </PageBox>
   );
 };
 
