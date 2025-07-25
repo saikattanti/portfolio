@@ -1,5 +1,5 @@
-// pages/index.tsx or app/page.tsx (depending on your routing setup)
 'use client';
+import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { useState, useEffect } from 'react';
 
@@ -17,6 +17,7 @@ const ThisCantBeReached = dynamic(() => import("@/components/core/ThisCantBeReac
 const FloatingNavbar = dynamic(
   () => import("@/components/navbar/FloatingNavbar")
 );
+
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -31,15 +32,24 @@ const Home = () => {
   if (isLoading) return <ThisCantBeReached />;
 
   return (
-    <PageBox>
-      <FloatingNavbar className="app_nav" navItems={navMenus} />
-      <HomeSection1 id="hero" />
-      <HomeSection2 id="services" />
-      <HomeSection3 id="experiences" />
-      <HomeSection4 id="skills" />
-      <HomeSection5 id="projects" />
-      <HomeSection6 id="contact" />
-    </PageBox>
+    <>
+      <Head>
+        <title>Saikat Tanti | Portfolio</title>
+        <link rel="canonical" href="https://www.saikattanti.xyz/" />
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="Official portfolio of Saikat Tanti — Full Stack Developer, UI/UX enthusiast, and MERN specialist." />
+      </Head>
+
+      <PageBox>
+        <FloatingNavbar className="app_nav" navItems={navMenus} />
+        <HomeSection1 id="hero" />
+        <HomeSection2 id="services" />
+        <HomeSection3 id="experiences" />
+        <HomeSection4 id="skills" />
+        <HomeSection5 id="projects" />
+        <HomeSection6 id="contact" />
+      </PageBox>
+    </>
   );
 };
 

@@ -194,9 +194,22 @@ other: {
    - Don't use just `sitemap.xml` (relative path)
    - Ensure your website is deployed and accessible
    - Test the sitemap URL in your browser first
-3. **Sitemap Not Found**: Check that `/sitemap.xml` is accessible and returns valid XML
-4. **Structured Data Errors**: Use Google's testing tools to validate JSON-LD schema
-5. **Indexing Issues**: Submit URLs manually and check for crawl errors
+3. **"Sitemap could not be read" Error** (Common):
+   - This is often a **temporary issue** - Google may show this while processing
+   - Wait 24-48 hours and check again
+   - The sitemap is working correctly if you can access it directly
+   - Google will retry automatically and usually resolves itself
+   - If it persists after 48 hours, resubmit the sitemap
+4. **Sitemap Not Found**: Check that `/sitemap.xml` is accessible and returns valid XML
+5. **Structured Data Errors**: Use Google's testing tools to validate JSON-LD schema
+6. **Indexing Issues**: Submit URLs manually and check for crawl errors
+
+### If "Sitemap could not be read" persists:
+- **Check accessibility**: Ensure `https://www.saikattanti.xyz/sitemap.xml` loads in your browser
+- **Verify format**: The XML should be valid (it is in your case)
+- **Wait patiently**: Google's crawlers may be busy - this often resolves automatically
+- **Resubmit**: After 48 hours, try removing and re-adding the sitemap
+- **Check robots.txt**: Ensure your robots.txt isn't blocking the sitemap (it's not in your case)
 
 ### Support Resources
 - [Google Search Console Help](https://support.google.com/webmasters)
