@@ -8,7 +8,7 @@ import skills from "@/data/skills";
 const HomeSection4 = ({ id }: { id: string }) => {
   return (
     <ResponsiveBox
-      classNames="dark:bg-[var(--bgColor)] bg-[var(--bgColor)] min-h-screen items-center justify-center dark:bg-dot-white/[0.02] bg-dot-white/[0.1]"
+      classNames="bg-[var(--bgColor)] min-h-screen items-center justify-center bg-dot-black/[0.05]"
       id={id}
     >
       <ConstrainedBox classNames="p-4 py-16">

@@ -1,8 +1,5 @@
-'use client';
-
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 
 export const metadata: Metadata = {
   title: '404 - Page Not Found | Saikat Tanti',
@@ -14,16 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default function NotFound() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black">
       <div className="text-center px-4">

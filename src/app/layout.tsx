@@ -2,9 +2,10 @@ import "./globals.scss";
 import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
-import { navMenus } from "@/data/navMenus";
 import structuredData from "@/data/structuredData";
+import GoogleAnalytics from "@/components/common/GoogleAnalytics";
+import WebVitals from "@/components/common/WebVitals";
+import ScrollToTop from "@/components/common/ScrollToTop";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -147,18 +148,6 @@ export const metadata: Metadata = {
   },
 };
 
-const GoogleAnalytics = dynamic(
-  () => import("@/components/common/GoogleAnalytics"),
-  { ssr: false }
-);
-const WebVitals = dynamic(() => import("@/components/common/WebVitals"), {
-  ssr: false,
-});
-const FloatingNavbar = dynamic(
-  () => import("@/components/navbar/FloatingNavbar")
-);
-const ScrollToTop = dynamic(() => import("@/components/common/ScrollToTop"));
-
 const isDebug = process.env.NODE_ENV === "development";
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
@@ -167,6 +156,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       <head>
         <script
           type="application/ld+json"
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredData),
           }}
@@ -176,7 +166,6 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
 
       <body className={isDebug ? "debug-screens" : ""}>
         {isDebug ? <WebVitals /> : null}
-        {/* <FloatingNavbar className="app_nav" navItems={navMenus} /> */}
         <main>{children}</main>
         <ScrollToTop />
       </body>

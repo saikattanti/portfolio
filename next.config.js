@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
-const path = require("path");
 const { withSentryConfig } = require("@sentry/nextjs");
 
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  output: 'standalone', // Enable standalone output for Docker
+  ...(process.env.NEXT_OUTPUT_STANDALONE === "true"
+    ? { output: "standalone" }
+    : {}),
 
   // ✅ Add redirect from Vercel to your custom domain
   async redirects() {

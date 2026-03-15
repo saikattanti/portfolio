@@ -7,11 +7,14 @@ import projects from "@/data/projects";
 const HomeSection5 = ({ id }: { id: string }) => {
   return (
     <ResponsiveBox
-      classNames="dark:bg-[var(--bgColor)] bg-[var(--bgColor)] dark:bg-grid-white/[0.02] bg-grid-white/[0.1] min-h-screen items-center justify-center"
+      classNames="bg-[var(--bgColor)] bg-grid-black/[0.05] items-center justify-center"
       id={id}
     >
-      <ConstrainedBox classNames="p-4 py-16">
+      <ConstrainedBox classNames="p-4 py-20">
         <SectionTitle>Recent Works</SectionTitle>
+        <p className="mt-4 text-center text-[var(--textColorLight)] max-w-2xl mx-auto text-sm md:text-base">
+          Selected projects with production-ready architecture, clean UX, and measurable outcomes.
+        </p>
 
         <ProjectList projects={projects} />
       </ConstrainedBox>

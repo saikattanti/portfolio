@@ -10,7 +10,7 @@ import socialLinks from "@/data/socialLinks";
 const HomeSection6 = ({ id }: { id: string }) => {
   return (
     <ResponsiveBox
-      classNames="dark:bg-[var(--bgColor)] bg-[var(--bgColor)] min-h-screen items-center justify-center dark:bg-dot-white/[0.02] bg-dot-white/[0.1] items-center justify-center"
+      classNames="bg-[var(--bgColor)] min-h-screen items-center justify-center bg-dot-black/[0.05]"
       id={id}
     >
       <ConstrainedBox classNames="p-4 py-16">
@@ -38,7 +38,7 @@ const HomeSection6 = ({ id }: { id: string }) => {
           </p>
         </Column>
       </ConstrainedBox>
-      
+
       {/* Spectrum UI Inspired Footer */}
       <SpectrumFooter />
     </ResponsiveBox>

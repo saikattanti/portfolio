@@ -34,16 +34,16 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div key={index} className="flex justify-start pt-20 pb-10">
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-20 lg:top-20 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-6 w-6 lg:h-8 lg:w-8 absolute left-5 lg:left-4 rounded-full bg-zinc-800 dark:bg-zinc-800 flex items-center justify-center">
-                <div className="h-3 w-3 lg:h-4 lg:w-4 p-1 lg:p-2 rounded-full bg-neutral-700 dark:bg-neutral-700 border border-neutral-600 dark:border-neutral-700" />
+              <div className="h-6 w-6 lg:h-8 lg:w-8 absolute left-5 lg:left-4 rounded-full bg-white border border-black/10 flex items-center justify-center shadow-sm">
+                <div className="h-3 w-3 lg:h-4 lg:w-4 p-1 lg:p-2 rounded-full bg-[var(--primaryColor)] border border-[var(--primaryColor30)]" />
               </div>
-              <h3 className="hidden md:block text-lg lg:text-xl xl:text-2xl font-semibold text-[var(--textColor)] dark:text-[var(--textColor)] md:pl-20 tracking-wide">
+              <h3 className="hidden md:block text-lg lg:text-xl xl:text-2xl font-semibold text-[var(--textColor)] md:pl-20 tracking-wide">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative pl-16 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-[var(--textColorLight)]">
                 {item.title}
               </h3>
               {item.content}

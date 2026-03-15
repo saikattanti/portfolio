@@ -29,7 +29,7 @@ const FloatingNavbar = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex w-fit fixed top-4 inset-x-0 mx-auto border border-white/[0.25] rounded-full bg-[var(--dialogColor50)] backdrop-blur-sm shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-4 py-3 items-center space-x-4",
+          "flex w-fit fixed top-4 inset-x-0 mx-auto border border-black/[0.1] rounded-full bg-[var(--dialogColor90)] backdrop-blur-sm shadow-md z-[5000] px-4 py-3 items-center space-x-4",
           className
         )}
       >
@@ -40,7 +40,7 @@ const FloatingNavbar = ({
                 key={`link=${idx}`}
                 href={navItem.link}
                 className={cn(
-                  "relative flex items-center space-x-1 text-neutral-50 group"
+                  "relative flex items-center space-x-1 text-[var(--textColor)] group hover:text-[var(--primaryColor)] transition-colors"
                 )}
               >
                 {/* Icon with the same style and hover effect */}
