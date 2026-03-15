@@ -66,7 +66,7 @@ const HomeSection1 = ({ id }: Readonly<{ id: string }>) => {
           <div className="w-full md:w-1/2 flex items-center justify-center relative">
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-[var(--whiteColor)] shadow-2xl">
               <Image
-                src="/images/placeholder.png"
+                src="/my-image.png"
                 alt="Saikat Tanti Profile"
                 fill
                 className="object-cover"
