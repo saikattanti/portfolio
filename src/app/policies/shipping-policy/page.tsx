@@ -1,9 +1,19 @@
 import dynamic from "next/dynamic";
+import { Metadata } from "next";
 import PolicyFooter from "@/components/common/PolicyFooter";
 
 const PageBox = dynamic(() => import("@/components/core/PageBox"));
 const ConstrainedBox = dynamic(() => import("@/components/core/constrained-box"));
 const ResponsiveBox = dynamic(() => import("@/components/core/ResponsiveBox"));
+
+export const metadata: Metadata = {
+  title: "Shipping Policy | Saikat Tanti",
+  description:
+    "Read the shipping and delivery policy for Saikat Tanti's digital services.",
+  alternates: {
+    canonical: "/policies/shipping-policy",
+  },
+};
 
 const ShippingPolicy = () => {
   return (

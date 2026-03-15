@@ -73,9 +73,6 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL("https://www.saikattanti.xyz"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -85,7 +82,7 @@ export const metadata: Metadata = {
     siteName: "Saikat Tanti Portfolio",
     images: [
       {
-        url: "/images/saikat-tanti-og.png",
+        url: "/images/placeholder.png",
         width: 1200,
         height: 630,
         alt: "Saikat Tanti - Full Stack Developer",
@@ -97,7 +94,7 @@ export const metadata: Metadata = {
     title: "Saikat Tanti - Full Stack Developer | Software Engineer",
     description: "Professional Full Stack Developer and Software Engineer specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies.",
     creator: "@saikattanti",
-    images: ["/images/saikat-tanti-twitter.png"],
+    images: ["/images/placeholder.png"],
   },
   robots: {
     index: true,
@@ -144,9 +141,9 @@ export const metadata: Metadata = {
   ],
   manifest: "/manifest.json",
   verification: {
-    google: "your-google-verification-code-here",
-    yandex: "your-yandex-verification-code-here",
-    yahoo: "your-yahoo-verification-code-here",
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,
+    yahoo: process.env.NEXT_PUBLIC_YAHOO_VERIFICATION,
   },
 };
 

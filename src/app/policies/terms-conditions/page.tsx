@@ -1,9 +1,19 @@
 import dynamic from "next/dynamic";
+import { Metadata } from "next";
 import PolicyFooter from "@/components/common/PolicyFooter";
 
 const PageBox = dynamic(() => import("@/components/core/PageBox"));
 const ConstrainedBox = dynamic(() => import("@/components/core/constrained-box"));
 const ResponsiveBox = dynamic(() => import("@/components/core/ResponsiveBox"));
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions | Saikat Tanti",
+  description:
+    "Read the terms and conditions for Saikat Tanti's software development and consulting services.",
+  alternates: {
+    canonical: "/policies/terms-conditions",
+  },
+};
 
 const TermsAndConditions = () => {
   return (

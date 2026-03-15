@@ -1,51 +1,83 @@
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Saikat Tanti",
-  "alternateName": ["saikattanti", "Saikat Tanti Developer"],
-  "description": "Full Stack Developer and Software Engineer specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies.",
-  "url": "https://www.saikattanti.xyz",
-  "image": "https://www.saikattanti.xyz/images/saikat-tanti-profile.jpg",
-  "sameAs": [
-    "https://github.com/saikattanti",
-    "https://linkedin.com/in/saikattanti",
-    "https://twitter.com/saikattanti"
-  ],
-  "jobTitle": "Full Stack Developer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Freelance"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "IN",
-    "addressLocality": "India"
-  },
-  "knowsAbout": [
-    "JavaScript",
-    "TypeScript", 
-    "React",
-    "Next.js",
-    "Node.js",
-    "Python",
-    "Cybersecurity",
-    "Full Stack Development",
-    "Web Development",
-    "Mobile App Development",
-    "UI/UX Design",
-    "SEO",
-    "Graphics Design"
-  ],
-  "alumniOf": {
-    "@type": "EducationalOrganization",
-    "name": "Software Engineering"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "professional",
-    "email": "contact@saikattanti.xyz",
-    "url": "https://www.saikattanti.xyz"
-  }
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.saikattanti.xyz/#person",
+      "name": "Saikat Tanti",
+      "alternateName": ["saikattanti", "Saikat"],
+      "description":
+        "Full Stack Developer and Software Engineer specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies.",
+      "url": "https://www.saikattanti.xyz/",
+      "image": "https://www.saikattanti.xyz/my-image.png",
+      "jobTitle": "Full Stack Developer",
+      "worksFor": {
+        "@id": "https://www.saikattanti.xyz/#organization"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN",
+        "addressLocality": "India"
+      },
+      "email": "mailto:saikattanti2005@gmail.com",
+      "sameAs": [
+        "https://github.com/saikattanti",
+        "https://www.linkedin.com/in/saikat-tanti-7375b2233/",
+        "https://x.com/TantiSaikat",
+        "https://www.instagram.com/saikattanti.dev/",
+        "https://telegram.me/SaikatTanti"
+      ],
+      "knowsAbout": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "PostgreSQL",
+        "Cybersecurity",
+        "Full Stack Development",
+        "Web Development"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.saikattanti.xyz/#organization",
+      "name": "Saikat Tanti",
+      "url": "https://www.saikattanti.xyz/",
+      "logo": "https://www.saikattanti.xyz/favicon-64x64.svg",
+      "sameAs": [
+        "https://github.com/saikattanti",
+        "https://www.linkedin.com/in/saikat-tanti-7375b2233/",
+        "https://x.com/TantiSaikat"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.saikattanti.xyz/#website",
+      "name": "Saikat Tanti Portfolio",
+      "url": "https://www.saikattanti.xyz/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://www.saikattanti.xyz/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.saikattanti.xyz/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://www.saikattanti.xyz/#profile",
+      "url": "https://www.saikattanti.xyz/",
+      "name": "Saikat Tanti",
+      "mainEntity": {
+        "@id": "https://www.saikattanti.xyz/#person"
+      }
+    }
+  ]
 }
 
 export default structuredData

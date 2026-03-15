@@ -1,0 +1,23 @@
+# Saikat Tanti
+
+Saikat Tanti is a full stack developer and software engineer based in India.
+
+## Official website
+- https://www.saikattanti.xyz/
+
+## Professional profiles
+- GitHub: https://github.com/saikattanti
+- LinkedIn: https://www.linkedin.com/in/saikat-tanti-7375b2233/
+- X: https://x.com/TantiSaikat
+- Instagram: https://www.instagram.com/saikattanti.dev/
+- Telegram: https://telegram.me/SaikatTanti
+
+## Primary topics
+- Full stack web development
+- React and Next.js
+- Node.js and APIs
+- Cybersecurity
+- Portfolio projects and case studies
+
+## Contact
+- Email: saikattanti2005@gmail.com

@@ -1,9 +1,19 @@
 import dynamic from "next/dynamic";
+import { Metadata } from "next";
 import PolicyFooter from "@/components/common/PolicyFooter";
 
 const PageBox = dynamic(() => import("@/components/core/PageBox"));
 const ConstrainedBox = dynamic(() => import("@/components/core/constrained-box"));
 const ResponsiveBox = dynamic(() => import("@/components/core/ResponsiveBox"));
+
+export const metadata: Metadata = {
+  title: "Cancellations and Refunds Policy | Saikat Tanti",
+  description:
+    "Read the cancellations and refunds policy for Saikat Tanti's professional services.",
+  alternates: {
+    canonical: "/policies/cancellation-refunds",
+  },
+};
 
 const CancellationRefunds = () => {
   return (
