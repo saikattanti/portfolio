@@ -13,6 +13,17 @@ const nextConfig = {
         has: [
           {
             type: 'host',
+            value: 'saikattanti.xyz',
+          },
+        ],
+        destination: 'https://www.saikattanti.xyz/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
             value: 'saikattanti.vercel.app', // only redirect if it's the Vercel domain
           },
         ],
