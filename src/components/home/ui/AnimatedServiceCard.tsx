@@ -1,7 +1,7 @@
 "use client";
 
 import { animate, motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/utils/cn";
 import { IServiceItem } from "@/types";
 import Image from "next/image";
@@ -153,29 +153,58 @@ const IconSkeleton = ({ item }: Readonly<{ item: IServiceItem }>) => {
 };
 
 const Sparkles = () => {
-  const randomMove = () => Math.random() * 2 - 1;
-  const randomOpacity = () => Math.random();
-  const random = () => Math.random();
+  const [stars, setStars] = useState<
+    Array<{
+      top: string;
+      left: string;
+      animateTop: string;
+      animateLeft: string;
+      opacity: number;
+      duration: number;
+    }>
+  >([]);
+
+  useEffect(() => {
+    const randomMove = () => Math.random() * 2 - 1;
+    const randomOpacity = () => Math.random();
+    const random = () => Math.random();
+
+    const generatedStars = Array.from({ length: 12 }, () => ({
+      top: `${random() * 100}%`,
+      left: `${random() * 100}%`,
+      animateTop: `calc(${random() * 100}% + ${randomMove()}px)`,
+      animateLeft: `calc(${random() * 100}% + ${randomMove()}px)`,
+      opacity: randomOpacity(),
+      duration: random() * 2 + 4,
+    }));
+
+    setStars(generatedStars);
+  }, []);
+
+  if (stars.length === 0) {
+    return null;
+  }
+
   return (
     <div className="absolute inset-0">
-      {[...Array(12)].map((_, i) => (
+      {stars.map((star, i) => (
         <motion.span
           key={`star-${i}`}
           animate={{
-            top: `calc(${random() * 100}% + ${randomMove()}px)`,
-            left: `calc(${random() * 100}% + ${randomMove()}px)`,
-            opacity: randomOpacity(),
+            top: star.animateTop,
+            left: star.animateLeft,
+            opacity: star.opacity,
             scale: [1, 1.2, 0],
           }}
           transition={{
-            duration: random() * 2 + 4,
+            duration: star.duration,
             repeat: Infinity,
             ease: "linear",
           }}
           style={{
             position: "absolute",
-            top: `${random() * 100}%`,
-            left: `${random() * 100}%`,
+            top: star.top,
+            left: star.left,
             width: `2px`,
             height: `2px`,
             borderRadius: "50%",

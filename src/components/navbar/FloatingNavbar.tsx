@@ -39,6 +39,7 @@ const FloatingNavbar = ({
               <Link
                 key={`link=${idx}`}
                 href={navItem.link}
+                aria-label={navItem.name}
                 className={cn(
                   "relative flex items-center space-x-1 text-[var(--textColor)] group hover:text-[var(--primaryColor)] transition-colors"
                 )}
@@ -49,14 +50,12 @@ const FloatingNavbar = ({
                     <FontAwesomeIcon
                       id={`nav-item-icon${idx}`}
                       icon={navItem.icon}
-                      title={navItem.name}
                     />
                   </span>
                   <span className="absolute inset-0 text-[var(--primaryColor)] transition-transform transform translate-y-full group-hover:translate-y-0 duration-300 ease-in-out z-10">
                     <FontAwesomeIcon
                       id={`nav-item-icon${idx}-hover`}
                       icon={navItem.icon}
-                      title={navItem.name}
                     />
                   </span>
                 </span>

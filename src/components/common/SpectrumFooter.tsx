@@ -7,6 +7,9 @@ const SpectrumFooter = () => {
 
         {/* Policy Links */}
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm">
+          <Link href="/saikat-tanti" className="text-gray-500 dark:text-gray-400 hover:text-[var(--primaryColor)] transition-colors">
+            About Saikat
+          </Link>
           <Link href="/policies/privacy-policy" className="text-gray-500 dark:text-gray-400 hover:text-[var(--primaryColor)] transition-colors">
             Privacy Policy
           </Link>
@@ -18,6 +21,21 @@ const SpectrumFooter = () => {
           </Link>
           <Link href="/policies/shipping-policy" className="text-gray-500 dark:text-gray-400 hover:text-[var(--primaryColor)] transition-colors">
             Shipping Policy
+          </Link>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm">
+          <Link href="https://github.com/saikattanti" target="_blank" rel="noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-[var(--primaryColor)] transition-colors">
+            GitHub
+          </Link>
+          <Link href="https://www.linkedin.com/in/saikat-tanti-7375b2233/" target="_blank" rel="noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-[var(--primaryColor)] transition-colors">
+            LinkedIn
+          </Link>
+          <Link href="https://x.com/TantiSaikat" target="_blank" rel="noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-[var(--primaryColor)] transition-colors">
+            X
+          </Link>
+          <Link href="https://www.instagram.com/saikattanti.dev/" target="_blank" rel="noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-[var(--primaryColor)] transition-colors">
+            Instagram
           </Link>
         </div>
 
