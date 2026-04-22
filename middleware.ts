@@ -1,10 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const CANONICAL_HOST = "www.saikattanti.xyz";
+const CANONICAL_HOST = "www.saikattanti.dev";
+const REDIRECT_HOSTS = new Set([
+  "saikattanti.dev",
+  "saikattanti.xyz",
+  "www.saikattanti.xyz",
+  "saikattanti.vercel.app",
+]);
 
 export function middleware(request: NextRequest) {
   const { nextUrl, headers } = request;
   const host = headers.get("host") || "";
+  const normalizedHost = host.split(":")[0].toLowerCase();
 
   // Do not redirect local development requests.
   if (host.startsWith("localhost") || host.startsWith("127.0.0.1")) {
@@ -12,7 +19,7 @@ export function middleware(request: NextRequest) {
   }
 
   // Force canonical host with a permanent redirect.
-  if (host === "saikattanti.xyz" || host === "saikattanti.vercel.app") {
+  if (REDIRECT_HOSTS.has(normalizedHost)) {
     const redirectUrl = new URL(request.url);
     redirectUrl.host = CANONICAL_HOST;
     redirectUrl.protocol = "https:";

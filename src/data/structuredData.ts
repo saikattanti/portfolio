@@ -3,24 +3,24 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://www.saikattanti.xyz/#person",
+      "@id": "https://www.saikattanti.dev/#person",
       "name": "Saikat Tanti",
       "alternateName": ["saikattanti", "Saikat"],
       "description":
         "Full Stack Developer and Software Engineer specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies.",
-      "url": "https://www.saikattanti.xyz/",
+      "url": "https://www.saikattanti.dev/",
       "mainEntityOfPage": {
-        "@id": "https://www.saikattanti.xyz/saikat-tanti#profile"
+        "@id": "https://www.saikattanti.dev/saikat-tanti#profile"
       },
       "image": {
         "@type": "ImageObject",
-        "@id": "https://www.saikattanti.xyz/#person-image",
-        "url": "https://www.saikattanti.xyz/my-image.png",
+        "@id": "https://www.saikattanti.dev/#person-image",
+        "url": "https://www.saikattanti.dev/my-image.png",
         "caption": "Saikat Tanti"
       },
       "jobTitle": "Full Stack Developer",
       "worksFor": {
-        "@id": "https://www.saikattanti.xyz/#organization"
+        "@id": "https://www.saikattanti.dev/#organization"
       },
       "affiliation": {
         "@type": "CollegeOrUniversity",
@@ -60,10 +60,10 @@ const structuredData = {
     },
     {
       "@type": "Organization",
-      "@id": "https://www.saikattanti.xyz/#organization",
+      "@id": "https://www.saikattanti.dev/#organization",
       "name": "Saikat Tanti",
-      "url": "https://www.saikattanti.xyz/",
-      "logo": "https://www.saikattanti.xyz/favicon-64x64.svg",
+      "url": "https://www.saikattanti.dev/",
+      "logo": "https://www.saikattanti.dev/favicon-64x64.svg",
       "sameAs": [
         "https://github.com/saikattanti",
         "https://www.linkedin.com/in/saikat-tanti-7375b2233/",
@@ -72,38 +72,38 @@ const structuredData = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.saikattanti.xyz/#website",
+      "@id": "https://www.saikattanti.dev/#website",
       "name": "Saikat Tanti Portfolio",
-      "url": "https://www.saikattanti.xyz/",
+      "url": "https://www.saikattanti.dev/",
       "inLanguage": "en",
       "publisher": {
-        "@id": "https://www.saikattanti.xyz/#organization"
+        "@id": "https://www.saikattanti.dev/#organization"
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://www.saikattanti.xyz/?q={search_term_string}",
+        "target": "https://www.saikattanti.dev/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://www.saikattanti.xyz/#profile",
-      "url": "https://www.saikattanti.xyz/",
+      "@id": "https://www.saikattanti.dev/#profile",
+      "url": "https://www.saikattanti.dev/",
       "name": "Saikat Tanti",
       "mainEntity": {
-        "@id": "https://www.saikattanti.xyz/#person"
+        "@id": "https://www.saikattanti.dev/#person"
       }
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://www.saikattanti.xyz/saikat-tanti#profile",
-      "url": "https://www.saikattanti.xyz/saikat-tanti",
+      "@id": "https://www.saikattanti.dev/saikat-tanti#profile",
+      "url": "https://www.saikattanti.dev/saikat-tanti",
       "name": "About Saikat Tanti",
       "isPartOf": {
-        "@id": "https://www.saikattanti.xyz/#website"
+        "@id": "https://www.saikattanti.dev/#website"
       },
       "mainEntity": {
-        "@id": "https://www.saikattanti.xyz/#person"
+        "@id": "https://www.saikattanti.dev/#person"
       }
     }
   ]

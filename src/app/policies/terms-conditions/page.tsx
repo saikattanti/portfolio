@@ -32,7 +32,7 @@ const TermsAndConditions = () => {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <h2>Agreement to Terms</h2>
               <p>
-                By accessing and using this website (saikattanti.xyz), you accept and agree to be bound 
+                By accessing and using this website (saikattanti.dev, with saikattanti.xyz as a legacy redirect during transition), you accept and agree to be bound 
                 by the terms and provision of this agreement. If you do not agree to abide by the above, 
                 please do not use this service.
               </p>
@@ -132,7 +132,7 @@ const TermsAndConditions = () => {
               <p>For questions about these Terms and Conditions, please contact us at:</p>
               <p>
                 <strong>Email:</strong> terms@saikattanti.xyz<br />
-                <strong>Website:</strong> https://www.saikattanti.xyz/
+                <strong>Website:</strong> https://www.saikattanti.dev/ (primary), https://www.saikattanti.xyz/ (legacy redirect)
               </p>
 
               <h2>Changes to Terms</h2>

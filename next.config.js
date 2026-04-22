@@ -74,9 +74,20 @@ const nextConfig = {
     ];
   },
 
-  // ✅ Add redirect from Vercel to your custom domain
+  // Redirect non-canonical hosts to the final .dev canonical domain.
   async redirects() {
     return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'saikattanti.dev',
+          },
+        ],
+        destination: 'https://www.saikattanti.dev/:path*',
+        permanent: true,
+      },
       {
         source: '/:path*',
         has: [
@@ -85,7 +96,7 @@ const nextConfig = {
             value: 'saikattanti.xyz',
           },
         ],
-        destination: 'https://www.saikattanti.xyz/:path*',
+        destination: 'https://www.saikattanti.dev/:path*',
         permanent: true,
       },
       {
@@ -93,10 +104,21 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'saikattanti.vercel.app', // only redirect if it's the Vercel domain
+            value: 'www.saikattanti.xyz',
           },
         ],
-        destination: 'https://www.saikattanti.xyz/:path*',
+        destination: 'https://www.saikattanti.dev/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'saikattanti.vercel.app',
+          },
+        ],
+        destination: 'https://www.saikattanti.dev/:path*',
         permanent: true,
       },
     ];

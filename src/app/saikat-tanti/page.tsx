@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "About Saikat Tanti | Entity Profile",
     description:
       "Official profile of Saikat Tanti, full stack developer and software engineer from India.",
-    url: "https://www.saikattanti.xyz/saikat-tanti",
+    url: "https://www.saikattanti.dev/saikat-tanti",
     type: "profile",
     images: [
       {
@@ -29,14 +29,14 @@ const entityPageSchema = {
   "@graph": [
     {
       "@type": "ProfilePage",
-      "@id": "https://www.saikattanti.xyz/saikat-tanti#profile",
-      url: "https://www.saikattanti.xyz/saikat-tanti",
+      "@id": "https://www.saikattanti.dev/saikat-tanti#profile",
+      url: "https://www.saikattanti.dev/saikat-tanti",
       name: "About Saikat Tanti",
       mainEntity: {
-        "@id": "https://www.saikattanti.xyz/#person",
+        "@id": "https://www.saikattanti.dev/#person",
       },
       isPartOf: {
-        "@id": "https://www.saikattanti.xyz/#website",
+        "@id": "https://www.saikattanti.dev/#website",
       },
     },
     {
@@ -46,13 +46,13 @@ const entityPageSchema = {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.saikattanti.xyz/",
+          item: "https://www.saikattanti.dev/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "About Saikat Tanti",
-          item: "https://www.saikattanti.xyz/saikat-tanti",
+          item: "https://www.saikattanti.dev/saikat-tanti",
         },
       ],
     },

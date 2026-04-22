@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const baseUrl = 'https://www.saikattanti.xyz'
+const baseUrl = 'https://www.saikattanti.dev'
 const stableLastModified = '2026-03-15T00:00:00.000Z'
 
 const routes: Array<{

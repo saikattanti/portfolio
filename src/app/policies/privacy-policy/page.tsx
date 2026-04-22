@@ -33,7 +33,8 @@ const PrivacyPolicy = () => {
               <h2>Introduction</h2>
               <p>
                 Welcome to Saikat Tanti&rsquo;s portfolio website. This Privacy Policy explains how we collect, 
-                use, disclose, and safeguard your information when you visit our website saikattanti.xyz.
+                use, disclose, and safeguard your information when you visit our website saikattanti.dev 
+                (with saikattanti.xyz as a legacy redirect during transition).
               </p>
 
               <h2>Information We Collect</h2>
@@ -104,7 +105,7 @@ const PrivacyPolicy = () => {
               </p>
               <p>
                 <strong>Email:</strong> privacy@saikattanti.xyz<br />
-                <strong>Website:</strong> https://www.saikattanti.xyz/
+                <strong>Website:</strong> https://www.saikattanti.dev/ (primary), https://www.saikattanti.xyz/ (legacy redirect)
               </p>
 
               <h2>Changes to This Policy</h2>

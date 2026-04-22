@@ -33,7 +33,7 @@ const projects: IProjectItem[] = [
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/saikattanti/ecommerce-platform",
-    url: "https://ecommerce-demo.saikattanti.xyz",
+    url: "https://ecommerce-demo.saikattanti.dev",
     tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Stripe", "NextAuth", "Tailwind CSS"],
   },
   {
@@ -45,7 +45,7 @@ const projects: IProjectItem[] = [
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/saikattanti/task-management-dashboard",
-    url: "https://taskmanager.saikattanti.xyz",
+    url: "https://taskmanager.saikattanti.dev",
     tags: ["React", "Node.js", "Socket.io", "MongoDB", "Express", "JWT", "Material-UI", "Redux"],
   },
   {
@@ -68,7 +68,7 @@ const projects: IProjectItem[] = [
     repoType: RepoType.Public,
     projectType: ProjectType.Personal,
     githubUrl: "https://github.com/saikattanti/portfolio",
-    url: "https://saikattanti.xyz",
+    url: "https://www.saikattanti.dev",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
   },
 ];

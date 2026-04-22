@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     "software solutions",
     "custom web applications"
   ],
-  authors: [{ name: "Saikat Tanti", url: "https://www.saikattanti.xyz" }],
+  authors: [{ name: "Saikat Tanti", url: "https://www.saikattanti.dev" }],
   creator: "Saikat Tanti",
   publisher: "Saikat Tanti",
   formatDetection: {
@@ -73,11 +73,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.saikattanti.xyz"),
+  metadataBase: new URL("https://www.saikattanti.dev"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.saikattanti.xyz",
+    url: "https://www.saikattanti.dev",
     title: "Saikat Tanti - Full Stack Developer | Software Engineer",
     description: "Professional Full Stack Developer and Software Engineer specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies.",
     siteName: "Saikat Tanti Portfolio",
