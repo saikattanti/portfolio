@@ -70,10 +70,10 @@ export default function NotFound() {
           <p className="mt-2">
             Need help? Contact me at{' '}
             <a
-              href="mailto:contact@saikattanti.xyz"
+              href="mailto:saikattanti2005@gmail.com"
               className="text-blue-400 hover:text-blue-300 underline"
             >
-              contact@saikattanti.xyz
+              saikattanti2005@gmail.com
             </a>
           </p>
         </div>

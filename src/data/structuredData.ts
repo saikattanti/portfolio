@@ -78,11 +78,6 @@ const structuredData = {
       "inLanguage": "en",
       "publisher": {
         "@id": "https://www.saikattanti.dev/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.saikattanti.dev/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
       }
     },
     {

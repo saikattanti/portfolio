@@ -87,6 +87,13 @@ const GravityHero = ({ id }: { id: string }) => {
                         <TalkButton />
 
                         <Link
+                            href="/saikat-tanti"
+                            className="px-8 py-3 rounded-full border border-black/10 bg-black/5 dark:bg-white/5 text-[var(--textColor)] font-medium hover:bg-black/10 dark:hover:bg-white/10 transition-colors shadow-sm"
+                        >
+                            About Saikat
+                        </Link>
+
+                        <Link
                             href={LocalConfig.values.NEXT_PUBLIC_RESUME_LINK}
                             target="_blank"
                             rel="noopener noreferrer"

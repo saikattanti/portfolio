@@ -104,7 +104,7 @@ const PrivacyPolicy = () => {
                 If you have any questions about this Privacy Policy, please contact us at:
               </p>
               <p>
-                <strong>Email:</strong> privacy@saikattanti.xyz<br />
+                <strong>Email:</strong> saikattanti2005@gmail.com<br />
                 <strong>Website:</strong> https://www.saikattanti.dev/ (primary), https://www.saikattanti.xyz/ (legacy redirect)
               </p>
 

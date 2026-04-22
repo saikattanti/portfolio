@@ -102,7 +102,7 @@ const ShippingPolicy = () => {
               <h2>Contact Information</h2>
               <p>For delivery-related inquiries, please contact:</p>
               <p>
-                <strong>Email:</strong> delivery@saikattanti.xyz<br />
+                <strong>Email:</strong> saikattanti2005@gmail.com<br />
                 <strong>Website:</strong> https://www.saikattanti.dev/ (primary), https://www.saikattanti.xyz/ (legacy redirect)
               </p>
 

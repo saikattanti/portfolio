@@ -90,7 +90,7 @@ const CancellationRefunds = () => {
               <h2>Refund Process</h2>
               <h3>How to Request a Refund</h3>
               <ol>
-                <li>Contact us via email at refunds@saikattanti.xyz</li>
+                <li>Contact us via email at saikattanti2005@gmail.com</li>
                 <li>Provide your project details and reason for refund</li>
                 <li>Include original payment confirmation</li>
                 <li>Allow up to 5 business days for review</li>
@@ -131,7 +131,7 @@ const CancellationRefunds = () => {
               <h2>Contact Information</h2>
               <p>For refund requests and related inquiries, please contact:</p>
               <p>
-                <strong>Email:</strong> refunds@saikattanti.xyz<br />
+                <strong>Email:</strong> saikattanti2005@gmail.com<br />
                 <strong>Website:</strong> https://www.saikattanti.dev/ (primary), https://www.saikattanti.xyz/ (legacy redirect)
               </p>
 

@@ -74,6 +74,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL("https://www.saikattanti.dev"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -94,7 +97,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Saikat Tanti - Full Stack Developer | Software Engineer",
     description: "Professional Full Stack Developer and Software Engineer specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies.",
-    creator: "@saikattanti",
+    creator: "@TantiSaikat",
     images: ["/images/placeholder.png"],
   },
   robots: {
