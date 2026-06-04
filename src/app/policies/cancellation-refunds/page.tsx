@@ -132,7 +132,7 @@ const CancellationRefunds = () => {
               <p>For refund requests and related inquiries, please contact:</p>
               <p>
                 <strong>Email:</strong> saikattanti2005@gmail.com<br />
-                <strong>Website:</strong> https://www.saikattanti.dev/ (primary), https://www.saikattanti.xyz/ (legacy redirect)
+                <strong>Website:</strong> https://www.saikattanti.dev/ (primary), previous domain redirected during transition
               </p>
 
               <h2>Policy Updates</h2>

@@ -4,7 +4,7 @@ Saikat Tanti is a full stack developer and software engineer based in India.
 
 ## Official website
 - https://www.saikattanti.dev/ (primary)
-- https://www.saikattanti.xyz/ (legacy redirect)
+- Previous domain kept only as a temporary legacy redirect during migration
 
 ## Professional profiles
 - GitHub: https://github.com/saikattanti
