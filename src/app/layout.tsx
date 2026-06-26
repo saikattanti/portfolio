@@ -157,6 +157,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html lang="en" className={poppins.className}>
       <head>
+        <meta name="impact-site-verification" content="15c13d82-8305-444a-b9bc-c5ac5fbe7ff1" />
         <script
           type="application/ld+json"
           suppressHydrationWarning
