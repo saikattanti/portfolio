@@ -39,13 +39,21 @@ const ProjectItem = ({ project }: { project: IProjectItem }) => {
               {project.title}
             </h3>
 
-            <div className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border transition-all duration-300 ${project.repoType === RepoType.Private
-                ? "text-red-600 border-red-600/30 bg-red-600/10"
-                : "text-emerald-600 border-emerald-600/30 bg-emerald-600/10"
-              }`}>
-              <div className={`w-1 h-1 rounded-full mr-1 ${project.repoType === RepoType.Private ? "bg-red-600" : "bg-emerald-600"
-                } ${isHovered ? 'animate-pulse' : ''}`} />
-              {project.repoType === RepoType.Private ? "Private" : "Public"}
+            <div className="flex flex-wrap gap-2 items-center mt-1">
+              <div className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border transition-all duration-300 ${project.repoType === RepoType.Private
+                  ? "text-red-600 border-red-600/30 bg-red-600/10"
+                  : "text-emerald-600 border-emerald-600/30 bg-emerald-600/10"
+                }`}>
+                <div className={`w-1 h-1 rounded-full mr-1 ${project.repoType === RepoType.Private ? "bg-red-600" : "bg-emerald-600"
+                  } ${isHovered ? 'animate-pulse' : ''}`} />
+                {project.repoType === RepoType.Private ? "Private" : "Public"}
+              </div>
+              
+              {project.badges && project.badges.map((badge, i) => (
+                <span key={i} className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border text-blue-600 border-blue-600/30 bg-blue-600/10">
+                  {badge}
+                </span>
+              ))}
             </div>
           </div>
         </div>
