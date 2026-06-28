@@ -5,8 +5,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FlipWords } from "@/components/common/FlipWords";
-import LocalConfig from "@/constants/config";
-import TalkButton from "./ui/TalkButton";
+import { personalInfo } from "@/data/personal";
 import { GravityText } from "./ui/GravityText";
 import { GravityDock } from "./ui/GravityDock";
 
@@ -23,11 +22,9 @@ const skillIcons = [
     "/skills/postgresql.svg",
     "/skills/mysql.svg",
     "/skills/redis.svg",
-    "/skills/docker.svg",
+    "/skills/docker.png",
     "/skills/kubernetes.svg",
     "/skills/aws.svg",
-    "/skills/terraform.svg",
-    "/skills/jenkins.svg",
     "/skills/git.svg",
     "/skills/github.svg",
     "/skills/kalilinux.png",
@@ -41,14 +38,19 @@ const skillIcons = [
     "/skills/dart.svg",
     "/skills/getx.png",
     "/skills/socket-io.png",
-    "/skills/sqlite.svg",
-    "/skills/cpp.png",
-    "/skills/PHP-logo.svg",
     "/skills/photoshop.png",
     "/skills/illustrator.png",
     "/skills/aftereffects.svg",
-    "/skills/DaVinci_Resolve_Studio.png",
-    "/skills/canva.png"
+    "/skills/canva.png",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
 ];
 
 const GravityHero = ({ id }: { id: string }) => {
@@ -71,35 +73,35 @@ const GravityHero = ({ id }: { id: string }) => {
                     {/* Massive Gravity Name */}
                     <div className="-ml-2 sm:-ml-4 mb-4">
                         <GravityText
-                            text="Saikat Tanti"
+                            text={personalInfo.name}
                             className="text-6xl sm:text-7xl md:text-8xl lg:text-[6rem] xl:text-8xl font-bold text-[var(--textColor)] tracking-tighter leading-none justify-start"
                         />
                     </div>
 
-                    <div className="overflow-hidden mb-8 pl-1 w-full flex justify-start -ml-1 sm:-ml-2">
+                    <div className="overflow-hidden mb-4 pl-1 w-full flex justify-start -ml-1 sm:-ml-2">
                         <FlipWords
-                            words={["Full Stack Developer", "Cyber Security Expert", "UI/UX Designer"]}
+                            words={["Full Stack Engineer", "Co-Founder", "AI Engineer", "Software Developer"]}
                             className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--primaryColor)] !text-left !justify-start"
                         />
                     </div>
+                    
+                    <p className="text-base sm:text-lg text-[var(--textColor)]/80 mb-8 pl-1 max-w-2xl">
+                        {personalInfo.tagline}
+                    </p>
 
-                    <div className="flex gap-4 pl-1">
-                        <TalkButton />
-
+                    <div className="flex gap-4 pl-1 flex-wrap">
                         <Link
-                            href="/saikat-tanti"
-                            className="px-8 py-3 rounded-full border border-black/10 bg-black/5 dark:bg-white/5 text-[var(--textColor)] font-medium hover:bg-black/10 dark:hover:bg-white/10 transition-colors shadow-sm"
+                            href="#projects"
+                            className="px-8 py-3 rounded-full bg-[var(--primaryColor)] text-white font-medium hover:opacity-90 transition-opacity shadow-sm"
                         >
-                            About Saikat
+                            View Projects
                         </Link>
 
                         <Link
-                            href={LocalConfig.values.NEXT_PUBLIC_RESUME_LINK}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-8 py-3 rounded-full border border-black/10 bg-white dark:bg-black/10 text-[var(--textColor)] font-medium hover:bg-black/5 dark:hover:bg-white/10 transition-colors shadow-sm"
+                            href="mailto:saikattanti2005@gmail.com"
+                            className="px-8 py-3 rounded-full border border-black/10 bg-black/5 dark:bg-white/5 text-[var(--textColor)] font-medium hover:bg-black/10 dark:hover:bg-white/10 transition-colors shadow-sm"
                         >
-                            Resume
+                            Contact Me
                         </Link>
                     </div>
                 </div>
@@ -115,8 +117,9 @@ const GravityHero = ({ id }: { id: string }) => {
                         >
                             <Image
                                 src="/my-image.png"
-                                alt="Saikat Tanti"
+                                alt={personalInfo.name}
                                 fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                                 priority
                             />
