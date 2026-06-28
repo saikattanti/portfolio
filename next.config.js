@@ -14,7 +14,7 @@ const nextConfig = {
       "object-src 'none'",
       "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com",
+      "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net https://ui-avatars.com",
       "font-src 'self' data:",
       "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com",
       "frame-src 'self'",
@@ -125,10 +125,15 @@ const nextConfig = {
   },
 
   images: {
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       { protocol: "https", hostname: "**.githubusercontent.com" },
       { protocol: "https", hostname: "**.github.com" },
       { protocol: "https", hostname: "**.amazonaws.com" },
+      { protocol: "https", hostname: "cdn.jsdelivr.net" },
+      { protocol: "https", hostname: "ui-avatars.com" },
     ],
   },
 };

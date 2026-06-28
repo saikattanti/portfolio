@@ -8,15 +8,15 @@ class Strings {
   static githubUsername = "saikattanti";
 
   static linkedIn = "LinkedIn";
-  static linkedInLink = "https://www.linkedin.com/in/saikat-tanti-7375b2233/";
+  static linkedInLink = "https://www.linkedin.com/in/saikat-tanti/";
   static linkedInUsername = "Saikat Tanti";
 
   static instagram = "Instagram";
-  static instagramLink = "https://www.instagram.com/saikattanti.dev/";
-  static instagramUsername = "saikattanti.dev";
+  static instagramLink = "https://www.instagram.com/saikat.tanti.official";
+  static instagramUsername = "saikat.tanti.official";
 
   static twitter = "Twitter";
-  static twitterLink = "https://x.com/TantiSaikat";
+  static twitterLink = "https://twitter.com/TantiSaikat";
   static twitterUsername = "TantiSaikat";
 
   static email = "Email";
@@ -32,7 +32,7 @@ class Strings {
   static koFiUsername = "saikattanti";
 
   static fullName = "Saikat Tanti";
-  static shortName = "saikattanti1";
+  static shortName = "saikattanti";
 }
 
 export default Strings;

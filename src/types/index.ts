@@ -24,6 +24,8 @@ export interface IExperienceItem {
   location: string;
   shortDescription?: string;
   description: string[];
+  techStack?: string[];
+  badges?: string[];
 }
 
 export enum RepoType {
@@ -49,7 +51,49 @@ export interface IProjectItem {
   tags?: string[];
   screenshots?: string[];
   about?: string;
+  status?: string;
+  keyFeatures?: string[];
+  badges?: string[];
 }
+
+export interface IEducationItem {
+  degree: string;
+  institution: string;
+  location?: string;
+  duration?: string;
+  year?: string;
+  cgpa?: string;
+  percentage?: string;
+  relevantCoursework?: string[];
+  status?: string;
+}
+
+export interface ICertificationItem {
+  name: string;
+  issuer: string;
+  issued?: string;
+  expires?: string | null;
+  credentialId?: string | null;
+  level?: string;
+  category: string;
+  duration?: string;
+  project?: string;
+}
+
+export interface ILeadershipItem {
+  role: string;
+  organization: string;
+  duration: string;
+  description: string;
+}
+
+export interface IHackathonItem {
+  name: string;
+  result: string;
+  project: string;
+  year: string;
+}
+
 
 export type IServiceItem = {
   id: number | string;
