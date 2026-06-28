@@ -1,0 +1,691 @@
+{
+  "meta": {
+    "last_updated": "2026-06-28",
+    "purpose": "Complete portfolio data for saikattanti.dev — use this file to populate all sections via Antigravity",
+    "instructions": "Every key maps directly to a portfolio section. Use all fields as-is. Do not truncate any description."
+  },
+
+  "personal": {
+    "name": "Saikat Tanti",
+    "title": "Full Stack Engineer & Co-Founder",
+    "tagline": "I build production-grade web and mobile applications end-to-end — from architecture and backend systems to frontend UX and deployment.",
+    "email": "saikattanti2005@gmail.com",
+    "phone": "+91 988-358-4060",
+    "location": "Kolkata, West Bengal, India",
+    "portfolio": "https://saikattanti.dev",
+    "github": "https://github.com/saikattanti",
+    "linkedin": "https://www.linkedin.com/in/saikat-tanti/",
+    "twitter": "https://twitter.com/TantiSaikat",
+    "instagram": "https://www.instagram.com/saikat.tanti.official",
+    "orcid": "https://orcid.org/0009-0005-6979-1503",
+    "short_bio": "Full Stack Engineer & CSE student (B.Tech 2027, CGPA 7.9) with 2+ years building and shipping production applications. Co-Founder & Founding Engineer of Gyanoda App (1,000+ Play Store users). Lead Software Engineer at Zogiraa, a Bihar Government-funded workforce marketplace. Chairperson, FIEM ACM Student Chapter.",
+    "long_bio": "I am a Full Stack Software Engineer and CSE student (B.Tech 2027, CGPA 7.9) based in Kolkata, India, with 2+ years of hands-on experience building, shipping, and leading production-grade web and mobile applications. I co-founded Gyanoda — a React Native + Next.js EdTech platform now live on Google Play with 1,000+ installs. I currently serve as Lead Software Engineer at Zogiraa (Zomira World Pvt. Ltd.), a Bihar Government-funded workforce marketplace, where I designed the full system architecture and lead an 8-person engineering team across a polyrepo structure of 4 repositories. I am also Chairperson of the FIEM ACM Student Chapter and Lead Organizer of HackSpire, our annual hackathon with 200+ participants.",
+    "availability": "Open to Full Stack Developer, SDE Intern, and AI Engineer roles — remote or hybrid across India",
+    "headline_160_chars": "Full Stack Engineer · Co-Founder @ Gyanoda (1K+ Play Store) · Lead Engineer @ Zogiraa (Gov. Funded) · React · Next.js · Node.js · TypeScript | Open to SDE/Full Stack roles"
+  },
+
+  "education": [
+    {
+      "degree": "Bachelor of Technology (B.Tech) — Computer Science & Engineering",
+      "institution": "Future Institute of Engineering and Management (FIEM)",
+      "location": "Kolkata, West Bengal, India",
+      "duration": "August 2023 – June 2027",
+      "cgpa": "7.9 / 10",
+      "percentage": "84%",
+      "relevant_coursework": [
+        "Data Structures & Algorithms",
+        "Database Management Systems",
+        "Operating Systems",
+        "Computer Networks",
+        "Software Engineering",
+        "System Design",
+        "Object Oriented Programming",
+        "Machine Learning"
+      ],
+      "status": "Currently in 3rd year, entering 4th year July 2026"
+    },
+    {
+      "degree": "Higher Secondary (12th)",
+      "institution": "Keoratala S.C.M High School",
+      "year": "2022",
+      "percentage": "79.71%"
+    },
+    {
+      "degree": "Secondary (10th)",
+      "institution": "Keoratala S.C.M High School",
+      "year": "2020"
+    }
+  ],
+
+  "experience": [
+    {
+      "id": "zogiraa",
+      "title": "Lead Software Engineer (Intern)",
+      "company": "Zomira World Pvt. Ltd. (Zogiraa)",
+      "company_url": "https://zogiraa.com",
+      "type": "Internship — Full Time",
+      "duration": "February 2026 – Present",
+      "location": "Remote",
+      "funding": "Bihar Government Funded",
+      "team_size": 8,
+      "role_summary": "Architect and technical lead for a 5-component production workforce marketplace platform serving blue-collar workers and employers across Bihar.",
+      "responsibilities": [
+        "Architected and led engineering for a 5-component workforce marketplace: React Native worker app, Next.js employer dashboard, Next.js admin panel, public landing site, and centralized Node.js/Express backend",
+        "Designed complete backend infrastructure: JWT + Bcrypt authentication, Fast2SMS OTP, Redis caching and rate-limiting, Socket.io real-time job notifications, Cashfree payment gateway for direct employer-to-worker wage transfers",
+        "Implemented Cloudflare DNS, DDoS protection, and SSL across all production domains; deployed on Vercel (frontend) and Render (backend)",
+        "Led a team of 8 engineers as primary technical decision-maker — reviewed all PRs, resolved critical bugs, drove all architecture decisions across 4 specialized repositories (polyrepo structure)",
+        "Resolved a critical Expo mobile app network failure by diagnosing dynamic IP routing conflicts and refactoring Axios client with strict 10-second timeout enforcement"
+      ],
+      "tech_stack": [
+        "React Native", "Expo", "Next.js", "Node.js", "Express.js",
+        "MongoDB", "Redis", "Socket.io", "Cashfree", "JWT", "Bcrypt",
+        "Fast2SMS", "Cloudinary", "Cloudflare", "Vercel", "Render", "TypeScript"
+      ],
+      "platform_components": [
+        "Worker Mobile App (React Native) — KYC, job applications, attendance tracking",
+        "Employer Dashboard (Next.js) — job posting, team hiring, payment processing",
+        "Admin Dashboard (Next.js) — KYC approvals, platform moderation",
+        "Landing Website — marketing and user acquisition",
+        "Backend API (Node.js/Express) — central server powering all components"
+      ]
+    },
+    {
+      "id": "gyanoda_cofound",
+      "title": "Co-Founder & Founding Engineer",
+      "company": "Gyanoda App",
+      "type": "Co-Founder",
+      "duration": "2024 – Present",
+      "location": "Kolkata, India",
+      "team_size": 5,
+      "role_summary": "Co-founded and engineered Gyanoda from zero to 1,000+ Google Play Store installs.",
+      "responsibilities": [
+        "Co-founded Gyanoda from zero — designed architecture, led development, and shipped to Google Play Store with 1,000+ installs",
+        "Built cross-platform React Native app and Next.js website delivering WBJEE/NEET PYQ video solutions with subscription and freemium monetization via Razorpay",
+        "Designed scalable content delivery architecture, real-time data sync, Cloudinary media pipeline",
+        "Led a 5-person team across frontend, backend, and deployment"
+      ],
+      "tech_stack": [
+        "React Native", "Next.js", "Node.js", "Express.js",
+        "MongoDB", "Razorpay", "Cloudinary", "Vercel", "REST APIs"
+      ],
+      "metrics": {
+        "play_store_installs": "1,000+",
+        "platform": "Android (Google Play Store)",
+        "monetization": "Freemium + Subscription"
+      }
+    },
+    {
+      "id": "gyanoda_freelance",
+      "title": "App Developer (Freelance)",
+      "company": "Gyanoda App",
+      "type": "Freelance",
+      "duration": "August 2024 – December 2024",
+      "location": "Kolkata, India",
+      "responsibilities": [
+        "Developed and optimized front-end features, improving application performance and scalability",
+        "Enhanced user experience by streamlining workflows and improving UI responsiveness",
+        "Collaborated with core team to deliver key modules within defined timelines"
+      ],
+      "tech_stack": ["React Native", "Next.js", "Node.js", "MongoDB"]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "zogiraa_platform",
+      "name": "Zogiraa — Workforce Marketplace Platform",
+      "tagline": "Bihar Government-funded platform connecting blue-collar workers with verified employers",
+      "category": "Full Stack · Mobile · Web · Payments",
+      "status": "Production — Live",
+      "live_url": "https://zogiraa.com",
+      "github_url": null,
+      "duration": "Feb 2026 – Present",
+      "role": "Lead Software Engineer — Architect & Team Lead",
+      "problem": "Millions of blue-collar workers in Bihar had no reliable digital way to find verified jobs, track attendance, or receive secure payments. Employers had no way to hire vetted workers on demand.",
+      "solution": "A 5-component workforce marketplace ecosystem — worker app, employer dashboard, admin panel, landing site, and centralized backend — enabling digital job matching, KYC verification, attendance tracking, and direct wage payments.",
+      "tech_stack": {
+        "mobile": ["React Native", "Expo"],
+        "frontend": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+        "backend": ["Node.js", "Express.js", "REST APIs"],
+        "database": ["MongoDB", "Redis"],
+        "realtime": ["Socket.io"],
+        "auth": ["JWT", "Bcrypt", "Fast2SMS OTP"],
+        "payments": ["Cashfree"],
+        "storage": ["Cloudinary"],
+        "infrastructure": ["Cloudflare", "Vercel", "Render"]
+      },
+      "key_features": [
+        "5-step worker onboarding with KYC document upload",
+        "Real-time job notifications via Socket.io",
+        "Direct employer-to-worker wage transfers via Cashfree",
+        "Redis-based API rate limiting and response caching",
+        "Cloudflare DDoS protection and SSL across all domains",
+        "Polyrepo architecture across 4 specialized repositories"
+      ],
+      "my_contributions": "Designed entire system architecture. Implemented all backend systems. Led 8-person engineering team. Reviewed all PRs. Made all architecture decisions. Deployed all production environments.",
+      "team_size": 8,
+      "funding": "Bihar Government"
+    },
+    {
+      "id": "gyanoda",
+      "name": "Gyanoda App",
+      "tagline": "EdTech app for WBJEE/NEET students — PYQs, mock tests, and video solutions",
+      "category": "Mobile · EdTech · Full Stack",
+      "status": "Production — Live on Play Store",
+      "live_url": "https://play.google.com",
+      "github_url": null,
+      "duration": "2024 – Present",
+      "role": "Co-Founder & Founding Engineer",
+      "problem": "WBJEE and NEET students in West Bengal lacked a focused, affordable platform for previous year question solutions and structured exam preparation.",
+      "solution": "Cross-platform mobile app and web platform delivering PYQ video solutions, mock tests, and guided learning with freemium and subscription monetization.",
+      "tech_stack": {
+        "mobile": ["React Native"],
+        "frontend": ["Next.js", "React"],
+        "backend": ["Node.js", "Express.js"],
+        "database": ["MongoDB"],
+        "payments": ["Razorpay"],
+        "storage": ["Cloudinary"],
+        "deployment": ["Vercel"]
+      },
+      "key_features": [
+        "Previous year question video solutions",
+        "Mock tests with performance tracking",
+        "Freemium and subscription content model",
+        "Razorpay payment integration for premium content",
+        "Scalable content delivery architecture"
+      ],
+      "metrics": {
+        "installs": "1,000+ on Google Play Store",
+        "target_users": "WBJEE and NEET aspirants",
+        "monetization": "Freemium + Subscription"
+      },
+      "team_size": 5
+    },
+    {
+      "id": "shopspire",
+      "name": "ShopSpire — E-Commerce Platform",
+      "tagline": "Production-ready merchandise platform for FIEM ACM Student Chapter",
+      "category": "Full Stack · E-Commerce · Web",
+      "status": "Production — Live",
+      "live_url": "https://hackspire.shop",
+      "github_url": "https://github.com/ACMFIEM/hackspire.shop",
+      "admin_github": "https://github.com/saikattanti/hackspire.shop_dash",
+      "duration": "2025",
+      "role": "Solo Developer — Full Stack",
+      "problem": "FIEM ACM Student Chapter needed a production-ready platform to sell official merchandise with proper inventory management, payment processing, and order tracking.",
+      "solution": "Full-stack e-commerce platform with customer storefront, admin dashboard, Razorpay payments, PostgreSQL database, and complete order management system.",
+      "tech_stack": {
+        "frontend": ["Next.js 15", "React 19", "Tailwind CSS", "Zustand", "Radix UI", "Lucide React"],
+        "backend": ["Next.js API Routes", "NextAuth", "JWT", "Bcrypt", "Nodemailer"],
+        "database": ["PostgreSQL (Neon)", "Prisma ORM"],
+        "admin_backend": ["Appwrite"],
+        "payments": ["Razorpay"],
+        "storage": ["ImageKit.io"],
+        "analytics": ["Recharts"],
+        "deployment": ["Vercel"]
+      },
+      "key_features": [
+        "Product catalog with inventory management",
+        "Shopping cart and order management",
+        "Razorpay payment gateway integration",
+        "Email verification via Nodemailer SMTP",
+        "Separate admin dashboard (Appwrite backend) for product and order management",
+        "ImageKit CDN for image optimization",
+        "Analytics dashboard with Recharts",
+        "NextAuth + JWT authentication"
+      ],
+      "my_contributions": "Designed and built the entire system solo — storefront, backend, database schema, payment workflow, email automation, and admin dashboard."
+    },
+    {
+      "id": "fyn",
+      "name": "Fyn — AI-Powered Expense Manager",
+      "tagline": "Privacy-first Android expense tracker that auto-detects bank SMS and payment notifications",
+      "category": "Full Stack · Android · AI/ML · FinTech",
+      "status": "Beta — Pilot Users",
+      "live_url": null,
+      "github_url": "https://github.com/saikattanti/fyn",
+      "duration": "2025",
+      "role": "Solo Developer — Full Stack",
+      "problem": "Existing expense trackers require manual entry or store personal SMS messages on cloud servers, creating privacy risks.",
+      "solution": "Privacy-first expense manager that automatically detects bank SMS and UPI payment notifications on-device using Android BroadcastReceiver, processes them with on-device NLP, and syncs only structured metadata to the backend — no personal messages ever leave the phone.",
+      "tech_stack": {
+        "frontend": ["Next.js", "React", "Tailwind CSS"],
+        "backend": ["Node.js", "Express.js"],
+        "database": ["MongoDB"],
+        "android": ["BroadcastReceiver", "NotificationListenerService", "WorkManager"],
+        "ml": ["Python", "Scikit-learn", "NLP", "Regex"],
+        "auth": ["JWT", "Bcrypt"],
+        "deployment": ["Vercel", "Render"]
+      },
+      "key_features": [
+        "Auto-detection of bank SMS (SMS_RECEIVED BroadcastReceiver)",
+        "UPI app notification capture (Google Pay, PhonePe, Paytm, WhatsApp Pay)",
+        "On-device ML transaction classification — no raw messages sent to server",
+        "WorkManager background sync of structured metadata only",
+        "Historical SMS import with READ_SMS permission",
+        "Real-time expense dashboard with budgeting and analytics",
+        "Privacy-first architecture — amount, merchant, category, timestamp only"
+      ],
+      "privacy_architecture": "All ML inference runs locally on the Android device. Personal messages are never uploaded. Only structured metadata (amount, merchant name, category, timestamp) is synced to backend."
+    },
+    {
+      "id": "spam_detection",
+      "name": "Real-Time Scam & Spam Detection System",
+      "tagline": "Multimodal AI fraud detector using transformer-based NLP — ~90% F1 score",
+      "category": "AI/ML · Python · NLP · Deep Learning",
+      "status": "Deployed — Live Web App",
+      "live_url": null,
+      "github_url": "https://github.com/saikattanti/spam-detection",
+      "duration": "January 2026 – February 2026",
+      "role": "Solo Developer — AI/ML Engineer",
+      "certification": "Completed as part of Ardent Computech Industrial Internship & Training — AI, ML, Deep Learning & Generative AI with Python (NASSCOM / IT-ITeS SSC Accredited)",
+      "problem": "Existing spam filters are text-only and keyword-based, missing sophisticated phishing attempts that use images, QR codes, and URLs.",
+      "solution": "Multimodal fraud detection pipeline processing text, emails, URLs, QR codes, and screenshots through OCR + transformer-based NLP classifiers.",
+      "tech_stack": {
+        "ml_framework": ["Python", "PyTorch", "Hugging Face Transformers"],
+        "models": ["DistilBERT", "DeBERTa"],
+        "ml_utilities": ["Scikit-learn", "NumPy", "Pandas"],
+        "ocr": ["EasyOCR", "Pillow"],
+        "backend": ["FastAPI", "AioHTTP"],
+        "system": ["Psutil"]
+      },
+      "key_features": [
+        "Multimodal input: text, emails, URLs, QR codes, and screenshots",
+        "EasyOCR pipeline extracts text from images for NLP analysis",
+        "DistilBERT/DeBERTa transformer classifiers for fraud detection",
+        "Real-time fraud risk scoring with category classification",
+        "Actionable user recommendations for each detected scam type",
+        "FastAPI deployment for live web application"
+      ],
+      "metrics": {
+        "accuracy": "~88–93% classification accuracy",
+        "f1_score": "~0.90 F1 score",
+        "dataset": "Publicly available phishing and scam datasets"
+      }
+    },
+    {
+      "id": "resume_analyzer",
+      "name": "Resume Analyzer & ATS Scoring Tool",
+      "tagline": "LLM-powered semantic ATS evaluation using GPT-4o and Claude 3.5 Sonnet",
+      "category": "AI/ML · Full Stack · LLM Integration",
+      "status": "Beta — Pilot Users",
+      "live_url": null,
+      "github_url": "https://github.com/saikattanti/resume-analyzer",
+      "duration": "2025",
+      "role": "Solo Developer",
+      "problem": "Existing ATS tools use keyword-matching which misses semantic alignment between resumes and job descriptions.",
+      "solution": "LLM-powered platform integrating GPT-4o and Claude 3.5 Sonnet for contextual resume-job description matching, category-wise scoring, and structured improvement suggestions.",
+      "tech_stack": {
+        "frontend": ["React.js", "Vite", "Tailwind CSS", "Zustand", "React Router"],
+        "ai": ["Puter AI SDK", "GPT-4o", "Claude 3.5 Sonnet"],
+        "backend": ["Puter.js (serverless)"]
+      },
+      "key_features": [
+        "Semantic ATS evaluation — not keyword matching",
+        "GPT-4o and Claude 3.5 Sonnet via Puter AI SDK",
+        "Category-wise scoring: skills match, experience alignment, formatting, ATS readiness",
+        "Structured improvement suggestions per category",
+        "Validated on 100+ real and sample resumes"
+      ]
+    },
+    {
+      "id": "trustless",
+      "name": "Trustless — Decentralized Escrow Marketplace",
+      "tagline": "Blockchain-based escrow platform for cross-border B2B transactions on Stellar",
+      "category": "Web3 · Blockchain · Full Stack",
+      "status": "MVP",
+      "live_url": null,
+      "github_url": "https://github.com/saikattanti/decentralized-escrow-marketplace",
+      "duration": "2026",
+      "role": "Solo Developer",
+      "problem": "Cross-border B2B transactions and freelancer milestone payments lack a trustless, decentralized mechanism — existing solutions require third-party intermediaries.",
+      "solution": "Decentralized escrow marketplace on the Stellar blockchain using Soroban smart contracts for trustless fund release, on-chain dispute resolution, and USDC/XLM payment rails.",
+      "tech_stack": {
+        "frontend": ["Next.js", "React", "TypeScript", "GSAP", "Three.js", "Tailwind CSS"],
+        "blockchain": ["Stellar", "Soroban Smart Contracts", "XLM", "USDC"]
+      },
+      "key_features": [
+        "Soroban smart contract-based trustless escrow",
+        "Cross-border B2B transaction support",
+        "USDC and XLM payment rails",
+        "Decentralized on-chain dispute resolution",
+        "Premium frontend with GSAP scroll animations and Three.js particle effects",
+        "Interactive bento layouts and immersive scrolling"
+      ]
+    },
+    {
+      "id": "hackspire_platform",
+      "name": "HackSpire Platform",
+      "tagline": "Hackathon management platform for FIEM ACM's annual flagship event",
+      "category": "Full Stack · Web",
+      "status": "Production — Live",
+      "live_url": null,
+      "github_url": null,
+      "duration": "2024 – Present",
+      "role": "Lead Developer & Event Organizer",
+      "tech_stack": {
+        "frontend": ["Next.js", "Tailwind CSS"],
+        "backend": ["Node.js"],
+        "database": ["MongoDB"]
+      },
+      "key_features": [
+        "Team registration and formation system",
+        "Participant management and leaderboards",
+        "Event operations and scheduling",
+        "Community engagement tools",
+        "200+ participants across HackSpire 2025 and 2026"
+      ]
+    },
+    {
+      "id": "women_safety",
+      "name": "Women Safety Analytics Platform",
+      "tagline": "Large-scale real-time safety monitoring with geospatial analytics",
+      "category": "Full Stack · DevOps · Data Engineering",
+      "status": "Academic Project",
+      "live_url": null,
+      "github_url": "https://github.com/saikattanti/women-safety-analytics",
+      "duration": "2024",
+      "role": "Developer",
+      "tech_stack": {
+        "backend": ["Django", "PostgreSQL", "PostGIS"],
+        "messaging": ["Apache Kafka"],
+        "cache": ["Redis"],
+        "auth": ["Keycloak"],
+        "devops": ["Docker", "Kubernetes"]
+      }
+    },
+    {
+      "id": "farmly",
+      "name": "Farmly",
+      "tagline": "Farmer-to-consumer marketplace removing intermediary vendors",
+      "category": "Full Stack · MERN",
+      "status": "Hackathon Project — HackSpire '24",
+      "live_url": null,
+      "github_url": "https://github.com/saikattanti/farmly",
+      "duration": "2024",
+      "role": "Developer",
+      "note": "Built as SIH problem statement at HackSpire '24",
+      "tech_stack": {
+        "stack": ["MongoDB", "Express.js", "React.js", "Node.js"]
+      }
+    }
+  ],
+
+  "skills": {
+    "languages": ["JavaScript (ES6+)", "TypeScript", "Python", "Java", "HTML5", "CSS3"],
+    "frontend": [
+      "React.js", "Next.js", "Vue.js", "React Native (Expo)",
+      "Tailwind CSS", "Framer Motion", "GSAP", "Three.js",
+      "Zustand", "Redux", "ShadCN", "Radix UI", "Reactbits", "MagicUI",
+      "Lucide React", "Recharts"
+    ],
+    "backend": [
+      "Node.js", "Express.js", "FastAPI", "Django",
+      "REST APIs", "Socket.io", "JWT", "OAuth",
+      "Bcrypt", "Prisma ORM", "NestJS (familiar)"
+    ],
+    "android": [
+      "BroadcastReceiver", "NotificationListenerService", "WorkManager"
+    ],
+    "databases": [
+      "MongoDB", "PostgreSQL (Neon)", "Redis",
+      "Supabase", "Firebase", "Appwrite", "MySQL"
+    ],
+    "ai_ml": [
+      "Python", "PyTorch", "Hugging Face Transformers",
+      "DistilBERT", "DeBERTa", "Scikit-learn",
+      "NumPy", "Pandas", "EasyOCR", "FastAPI",
+      "GPT-4o API", "Claude API (Anthropic)", "Gemini API (Google)",
+      "Puter AI SDK", "Prompt Engineering"
+    ],
+    "cloud_devops": [
+      "AWS (S3, Amplify)", "Vercel", "Render", "Cloudflare",
+      "Docker", "Git", "GitHub", "CI/CD", "cPanel", "Kubernetes (familiar)"
+    ],
+    "payments_apis": [
+      "Razorpay", "Cashfree", "Fast2SMS",
+      "Cloudinary", "ImageKit", "Nodemailer"
+    ],
+    "blockchain": [
+      "Stellar", "Soroban Smart Contracts", "XLM", "USDC"
+    ],
+    "security": [
+      "Web Application Penetration Testing (WAPT)",
+      "Burp Suite", "Wireshark", "Nmap",
+      "OWASP", "SSL/TLS", "DDoS Protection"
+    ],
+    "tools": [
+      "VS Code", "Claude Code", "Cursor",
+      "Postman", "GitHub Actions", "Figma (basic)"
+    ]
+  },
+
+  "certifications": [
+    {
+      "name": "Gemini Certified University Student",
+      "issuer": "Google for Education",
+      "issued": "June 16, 2026",
+      "expires": "June 16, 2029",
+      "credential_id": null,
+      "level": "University",
+      "category": "AI"
+    },
+    {
+      "name": "Claude 101",
+      "issuer": "Anthropic",
+      "issued": "2026",
+      "expires": null,
+      "category": "AI"
+    },
+    {
+      "name": "Claude Code 101",
+      "issuer": "Anthropic",
+      "issued": "2026",
+      "expires": null,
+      "category": "AI"
+    },
+    {
+      "name": "Industrial Internship — AI, ML, Deep Learning & Generative AI with Python",
+      "issuer": "Ardent Computech Pvt. Ltd.",
+      "accreditation": "NASSCOM / IT-ITeS SSC / N-E-A-T",
+      "issued": "February 28, 2026",
+      "duration": "January 8, 2026 – February 28, 2026",
+      "project": "Real-Time Spam Detection System",
+      "credential_id": "ARDENT/189001",
+      "category": "AI/ML"
+    },
+    {
+      "name": "Industrial Training — AI, ML, Deep Learning & Generative AI with Python",
+      "issuer": "Ardent Computech Pvt. Ltd.",
+      "accreditation": "NASSCOM / IT-ITeS SSC / N-E-A-T",
+      "issued": "February 28, 2026",
+      "duration": "January 8, 2026 – February 28, 2026",
+      "project": "Real-Time Spam Detection System",
+      "credential_id": "ARDENT/189046",
+      "category": "AI/ML"
+    },
+    {
+      "name": "Industrial Internship — Cyber Security & Ethical Hacking",
+      "issuer": "Ardent Computech Pvt. Ltd.",
+      "accreditation": "NASSCOM / IT-ITeS SSC",
+      "issued": "August 5, 2024",
+      "duration": "July 5, 2024 – August 5, 2024",
+      "project": "Web Application Penetration Testing (WAPT)",
+      "credential_id": "ARDENT/116401",
+      "category": "Security"
+    },
+    {
+      "name": "Industrial Training — Cyber Security & Ethical Hacking",
+      "issuer": "Ardent Computech Pvt. Ltd.",
+      "accreditation": "NASSCOM / IT-ITeS SSC",
+      "issued": "August 5, 2024",
+      "duration": "July 5, 2024 – August 5, 2024",
+      "project": "Web Application Penetration Testing (WAPT)",
+      "credential_id": "ARDENT/116416",
+      "category": "Security"
+    },
+    {
+      "name": "1-Day Workshop — Cyber Security",
+      "issuer": "Ardent Computech Pvt. Ltd.",
+      "issued": "May 17, 2024",
+      "credential_id": "ARDENT/103154",
+      "category": "Security"
+    },
+    {
+      "name": "MyGov Campus Ambassador",
+      "issuer": "MyGov — Ministry of Electronics & Information Technology (MeitY), Government of India",
+      "issued": "2023",
+      "category": "Government"
+    },
+    {
+      "name": "Google AI Educator Series — Intro to Gemini (Foundational)",
+      "issuer": "Google for Education",
+      "category": "AI"
+    },
+    {
+      "name": "Google AI Educator Series — Intro to NotebookLM (Foundational)",
+      "issuer": "Google for Education",
+      "category": "AI"
+    },
+    {
+      "name": "Google AI Educator Series — Intro to Vibe Coding (Foundational)",
+      "issuer": "Google for Education",
+      "category": "AI"
+    },
+    {
+      "name": "Google AI Educator Series — Administrative 3.2.2 (Higher Ed Pedagogical)",
+      "issuer": "Google for Education",
+      "category": "AI"
+    },
+    {
+      "name": "MongoDB CRUD Operations Skill Badge",
+      "issuer": "MongoDB",
+      "category": "Database"
+    },
+    {
+      "name": "Synthesize Research Findings",
+      "issuer": "Google",
+      "category": "Productivity"
+    }
+  ],
+
+  "leadership": [
+    {
+      "role": "Chairperson",
+      "organization": "FIEM ACM Student Chapter",
+      "duration": "2026 – 2027",
+      "description": "Lead the ACM chapter at Future Institute of Engineering and Management. Organize technical events, workshops, and the annual HackSpire hackathon."
+    },
+    {
+      "role": "Core Team Member",
+      "organization": "FIEM ACM Student Chapter",
+      "duration": "2025 – 2026",
+      "description": "Served as core organizing member before becoming Chairperson."
+    },
+    {
+      "role": "Lead Organizer",
+      "organization": "HackSpire 2025 & 2026 (FIEM ACM Annual Hackathon)",
+      "duration": "2025 – 2026",
+      "description": "Organized and led HackSpire — FIEM ACM's flagship annual hackathon with 200+ participants across both editions. Also organizing HackSpire 2026 in September."
+    },
+    {
+      "role": "Tech Lead",
+      "organization": "Xplorica Techno-Management Club, FIEM",
+      "duration": "Current",
+      "description": "Technical lead of Xplorica, the techno-management club at FIEM."
+    },
+    {
+      "role": "MyGov Campus Ambassador",
+      "organization": "MyGov — Ministry of Electronics & Information Technology (MeitY), Government of India",
+      "duration": "Active",
+      "description": "Officially appointed Campus Ambassador under MeitY, Government of India's MyGov platform."
+    },
+    {
+      "role": "Organizer",
+      "organization": "Hacktonix 2025 & 2026",
+      "duration": "2025 – 2026",
+      "description": "Organized Hacktonix hackathon editions for 2025 and 2026."
+    }
+  ],
+
+  "hackathons": [
+    {
+      "name": "Smart India Hackathon 2024",
+      "result": "Top 20 — Internal Selection Round",
+      "project": "AI Interview Platform",
+      "year": "2024"
+    },
+    {
+      "name": "HackSpire '24",
+      "result": "Participant",
+      "project": "Farmly — Farmer-to-consumer marketplace (SIH problem statement)",
+      "year": "2024"
+    },
+    {
+      "name": "Hacktonix '24",
+      "result": "Participant",
+      "project": "AI Interview Platform",
+      "year": "2024"
+    }
+  ],
+
+  "social_profiles": {
+    "github": "https://github.com/saikattanti",
+    "github_stats": {
+      "public_repos": "86+",
+      "total_repos": "90+",
+      "contributions_last_year": "2,004",
+      "followers": 8,
+      "following": 16,
+      "stars_received": 52
+    },
+    "linkedin": "https://www.linkedin.com/in/saikat-tanti/",
+    "twitter": "https://twitter.com/TantiSaikat",
+    "instagram": "https://www.instagram.com/saikat.tanti.official",
+    "portfolio": "https://saikattanti.dev",
+    "orcid": "https://orcid.org/0009-0005-6979-1503",
+    "devto": "https://dev.to/saikattanti",
+    "medium": "active"
+  },
+
+  "organizations": [
+    {
+      "name": "Xplorica FIEM",
+      "github": "https://github.com/Xplorica-FIEM",
+      "role": "Tech Lead"
+    },
+    {
+      "name": "FIEM ACM Student Chapter",
+      "github": "https://github.com/FIEM-ACM-Student-Chapter",
+      "role": "Chairperson"
+    },
+    {
+      "name": "Zogiraa (Hunarbhi Rojgarbhi)",
+      "github": "https://github.com/zogiraa-hunarbhi-rojgarbhi",
+      "role": "Lead Software Engineer"
+    },
+    {
+      "name": "Mantitup Org",
+      "github": "https://github.com/Mantitup-Org",
+      "role": "Member"
+    }
+  ],
+
+  "target_roles": [
+    "Full Stack Developer",
+    "SDE Intern",
+    "Software Engineer Intern",
+    "React Developer",
+    "Node.js Developer",
+    "AI Engineer",
+    "Full Stack Engineer"
+  ],
+
+  "availability": {
+    "status": "Actively looking",
+    "type": ["Internship", "Part-time", "Full-time (from July 2027)"],
+    "location_preference": ["Remote", "Hybrid", "On-site — open to relocation"],
+    "notice_period": "Immediate",
+    "graduation": "June 2027"
+  }
+}
