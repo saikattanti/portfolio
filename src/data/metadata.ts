@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Saikat Tanti",
+  title: "Saikat Tanti — Full Stack Engineer & Co-Founder",
   description:
-    "Saikat Tanti is a proficient Software Engineer and Full Stack Developer from India, skilled in front-end and back-end development using modern tech stacks.",
+    "Full Stack Engineer and CSE student (B.Tech 2027) building production apps. Co-Founder of Gyanoda (1K+ Play Store), Lead Engineer at Zogiraa (Bihar Gov funded). React, Next.js, Node.js, Python.",
   robots: {
     index: true,
     follow: true,
@@ -42,15 +42,20 @@ export const metadata: Metadata = {
     },
   ],
   keywords: [
-    "saikat tanti",
-    "saikat",
-    "saikattanti",
-    "saikat-tanti",
-    "tanti saikat",
-    "react native developer",
-    "nextjs developer",
-    "full stack developer",
-    "indian developer",
-    "saikattanti github",
+    "Full Stack Developer",
+    "React",
+    "Next.js",
+    "Node.js",
+    "TypeScript",
+    "Python",
+    "AI Engineer",
+    "SDE Intern",
+    "Kolkata",
+    "India",
+    "Saikat Tanti",
   ],
+  openGraph: {
+    url: "https://saikattanti.dev",
+    type: "website",
+  },
 };
