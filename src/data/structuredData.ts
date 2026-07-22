@@ -50,6 +50,7 @@ const structuredData = {
         "https://www.facebook.com/saikat.tanti.official",
         "https://orcid.org/0009-0005-6979-1503",
         "https://dev.to/saikattanti",
+        "https://www.wikidata.org/wiki/Q140665397",
       ],
       knowsAbout: [
         "React.js",
