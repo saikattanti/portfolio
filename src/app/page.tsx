@@ -23,11 +23,11 @@ const Home = () => {
       <HomeFloatingNavbar />
       <HomeSection1 id="hero" />
       <SectionAbout id="about" />
-      <HomeSection2 id="services" />
       <HomeSection3 id="experiences" />
-      <SectionEducation id="education" />
-      <HomeSection4 id="skills" />
       <HomeSection5 id="projects" />
+      <HomeSection4 id="skills" />
+      <HomeSection2 id="services" />
+      <SectionEducation id="education" />
       <SectionCertifications id="certifications" />
       <SectionLeadership id="leadership" />
       <HomeSection6 id="contact" />

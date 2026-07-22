@@ -1,30 +1,20 @@
 import { INavItem } from "@/types";
 import {
-  faHome,
   faUser,
   faBriefcase,
   faTimeline,
   faAward,
   faLaptopCode,
+  faUsers,
   faEnvelope,
-  faCreditCard,
 } from "@fortawesome/free-solid-svg-icons";
 
+/** Job-seeker nav — Payment lives in footer only. */
 export const navMenus: INavItem[] = [
-  // {
-  //   name: "Home",
-  //   link: "/#hero",
-  //   icon: faHome,
-  // },
   {
     name: "About",
     link: "/#about",
     icon: faUser,
-  },
-  {
-    name: "Services",
-    link: "/#services",
-    icon: faBriefcase,
   },
   {
     name: "Experiences",
@@ -32,23 +22,28 @@ export const navMenus: INavItem[] = [
     icon: faTimeline,
   },
   {
-    name: "Skills",
-    link: "/#skills",
-    icon: faAward,
-  },
-  {
     name: "Projects",
     link: "/#projects",
     icon: faLaptopCode,
   },
   {
+    name: "Skills",
+    link: "/#skills",
+    icon: faAward,
+  },
+  {
+    name: "Services",
+    link: "/#services",
+    icon: faBriefcase,
+  },
+  {
+    name: "Leadership",
+    link: "/#leadership",
+    icon: faUsers,
+  },
+  {
     name: "Contact",
     link: "/#contact",
     icon: faEnvelope,
-  },
-  {
-    name: "Payment",
-    link: "/payment",
-    icon: faCreditCard,
   },
 ];
