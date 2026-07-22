@@ -20,18 +20,18 @@ const SkillItem = ({ data }: { data: ISkillListItem }) => {
                 {skill.icon ? (
                   <Image
                     src={skill.icon}
-                    alt={`logo-${skill.title}`}
-                    width={144}
-                    height={144}
-                    sizes="100%"
+                    alt={skill.title}
+                    width={56}
+                    height={56}
                     loading="lazy"
-                    placeholder="blur"
-                    blurDataURL="/images/logical-thinking.png"
-                    className="w-12 lg:w-14 h-auto aspect-square object-cover"
+                    unoptimized={skill.icon.endsWith(".svg")}
+                    className="w-12 lg:w-14 h-12 lg:h-14 object-contain"
                   />
                 ) : null}
 
-                <p className="text-xs/6 font-normal">{skill.title}</p>
+                <p className="text-xs/6 font-normal text-center max-w-[7rem]">
+                  {skill.title}
+                </p>
               </Column>
             );
           })}

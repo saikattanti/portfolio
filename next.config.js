@@ -14,7 +14,7 @@ const nextConfig = {
       "object-src 'none'",
       "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net https://ui-avatars.com",
+      "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net https://ui-avatars.com https://huggingface.co",
       "font-src 'self' data:",
       "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com",
       "frame-src 'self'",
@@ -134,6 +134,8 @@ const nextConfig = {
       { protocol: "https", hostname: "**.amazonaws.com" },
       { protocol: "https", hostname: "cdn.jsdelivr.net" },
       { protocol: "https", hostname: "ui-avatars.com" },
+      { protocol: "https", hostname: "huggingface.co" },
+      { protocol: "https", hostname: "cdn.simpleicons.org" },
     ],
   },
 };

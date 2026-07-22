@@ -6,6 +6,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 import SocialButton from "./ui/SocialButton";
 import SpectrumFooter from "@/components/common/SpectrumFooter";
 import socialLinks from "@/data/socialLinks";
+import { personalInfo } from "@/data/personal";
 
 const HomeSection6 = ({ id }: { id: string }) => {
   return (
@@ -17,29 +18,28 @@ const HomeSection6 = ({ id }: { id: string }) => {
         <SectionTitle>Get in Touch</SectionTitle>
 
         <Column classNames="mt-16 w-full">
+          <p className="text-center mx-auto mb-10 max-w-2xl text-base text-[var(--textColor)]/80">
+            Prefer email or LinkedIn. {personalInfo.availability}
+          </p>
+
           <GridBox classNames="sm:grid-cols-2 w-full mx-auto gap-4">
-            {socialLinks.map((link, index) => {
-              return (
-                <SocialButton
-                  key={`social-link-${index}`}
-                  name={link.name}
-                  text={link.text}
-                  icon={link.icon}
-                  url={link.url}
-                />
-              );
-            })}
+            {socialLinks.map((link, index) => (
+              <SocialButton
+                key={`social-link-${index}`}
+                name={link.name}
+                text={link.text}
+                icon={link.icon}
+                url={link.url}
+              />
+            ))}
           </GridBox>
 
-          <p className="text-center mx-auto mt-16 text-2xl/6 font-semibold">
-            I&apos;m{" "}
-            <span className="text-[var(--primaryColor)]">available</span> for
-            freelancing.
+          <p className="text-center mx-auto mt-16 text-lg/6 font-medium text-[var(--textColor)]/70">
+            Also open to select freelance full-stack and React Native work.
           </p>
         </Column>
       </ConstrainedBox>
 
-      {/* Spectrum UI Inspired Footer */}
       <SpectrumFooter />
     </ResponsiveBox>
   );
