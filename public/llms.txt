@@ -1,24 +1,33 @@
 # Saikat Tanti
 
-Saikat Tanti is a full stack developer and software engineer based in India.
+Saikat Tanti is a Full Stack Software Engineer and Co-Founder based in Kolkata, India.
+B.Tech CSE (FIEM), graduating June 2027. Open to Full Stack / SDE Intern roles (remote or hybrid, India).
 
 ## Official website
-- https://www.saikattanti.dev/ (primary)
-- Previous domain kept only as a temporary legacy redirect during migration
+- https://www.saikattanti.dev/ (canonical)
+- Entity profile: https://www.saikattanti.dev/saikat-tanti
 
 ## Professional profiles
 - GitHub: https://github.com/saikattanti
-- LinkedIn: https://www.linkedin.com/in/saikat-tanti-7375b2233/
-- X: https://x.com/TantiSaikat
-- Instagram: https://www.instagram.com/saikattanti.dev/
-- Telegram: https://telegram.me/SaikatTanti
+- LinkedIn: https://www.linkedin.com/in/saikat-tanti/
+- X: https://twitter.com/TantiSaikat
+- Instagram: https://www.instagram.com/saikattanti.dev
+- Facebook: https://www.facebook.com/saikat.tanti.official
+- ORCID: https://orcid.org/0009-0005-6979-1503
+- Dev.to: https://dev.to/saikattanti
+
+## Highlights
+- Co-Founder & Founding Engineer, Gyanoda App (1,000+ Google Play installs)
+- Lead Software Engineer Intern, Zogiraa / Zomira World Pvt. Ltd. (Bihar Government-funded workforce marketplace)
+- Chairperson, FIEM ACM Student Chapter; Lead Organizer, HackSpire (200+ participants)
 
 ## Primary topics
-- Full stack web development
-- React and Next.js
-- Node.js and APIs
-- Cybersecurity
-- Portfolio projects and case studies
+- Full stack web development (Next.js, React, Node.js, TypeScript)
+- React Native / Expo mobile apps
+- Backend APIs (Express, Redis, MongoDB, PostgreSQL)
+- Applied AI/ML (PyTorch, DistilBERT, LLM API integration)
+- Portfolio projects and production case studies
 
 ## Contact
 - Email: saikattanti2005@gmail.com
+- Preferred: Email or LinkedIn DM

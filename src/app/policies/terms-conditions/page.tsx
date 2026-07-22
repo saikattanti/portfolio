@@ -41,11 +41,9 @@ const TermsAndConditions = () => {
               <p>Saikat Tanti provides the following professional services:</p>
               <ul>
                 <li>Full Stack Web Development</li>
-                <li>Mobile Application Development</li>
-                <li>UI/UX Design</li>
-                <li>Cybersecurity Consulting</li>
-                <li>SEO Services</li>
-                <li>Graphics Design</li>
+                <li>React Native App Development</li>
+                <li>Backend API Development</li>
+                <li>LLM API Integration</li>
               </ul>
 
               <h2>Payment Terms</h2>

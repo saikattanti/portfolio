@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
+import { personalInfo } from "@/data/personal";
+import Strings from "@/constants/strings";
 
 export const metadata: Metadata = {
-  title: "About Saikat Tanti | Entity Profile",
+  title: "About Saikat Tanti | Full Stack Engineer & Co-Founder",
   description:
-    "Official profile of Saikat Tanti, full stack developer and software engineer from India. Explore biography, skills, affiliations, and verified public profiles.",
+    "Official profile of Saikat Tanti — Full Stack Engineer & Co-Founder. Gyanoda (1,000+ Play Store installs). Lead Software Engineer Intern at Zogiraa. FIEM B.Tech CSE 2027.",
   alternates: {
     canonical: "/saikat-tanti",
   },
   openGraph: {
-    title: "About Saikat Tanti | Entity Profile",
+    title: "About Saikat Tanti | Full Stack Engineer & Co-Founder",
     description:
-      "Official profile of Saikat Tanti, full stack developer and software engineer from India.",
+      "Full Stack Engineer & Co-Founder based in Kolkata. Co-founded Gyanoda; Lead Engineer Intern at Bihar Government-funded Zogiraa.",
     url: "https://www.saikattanti.dev/saikat-tanti",
     type: "profile",
     images: [
@@ -70,19 +72,18 @@ const SaikatTantiEntityPage = () => {
         }}
       />
 
-      <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Saikat Tanti</h1>
+      <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+        Saikat Tanti
+      </h1>
       <p className="mt-4 max-w-3xl text-base leading-7 sm:text-lg">
-        Full Stack Developer | React.js and Next.js Specialist | TypeScript and
-        Node.js Engineer | Cybersecurity and Ethical Hacking Enthusiast.
+        Full Stack Software Engineer & Co-Founder | React, Next.js, React Native,
+        Node.js, TypeScript
       </p>
 
       <section className="mt-10 space-y-3">
         <h2 className="text-2xl font-semibold">Summary</h2>
         <p className="leading-7 text-[var(--textColor)]/90">
-          CSE student at Future Institute of Engineering and Management (FIEM),
-          passionate about web and app development and building practical digital
-          products. Works across React, Next.js, Node.js, and TypeScript with a
-          focus on scalable engineering, modern UI, and secure backend systems.
+          {personalInfo.longBio}
         </p>
       </section>
 
@@ -90,24 +91,26 @@ const SaikatTantiEntityPage = () => {
         <h2 className="text-2xl font-semibold">Experience Highlights</h2>
         <div className="space-y-4 text-[var(--textColor)]/90">
           <p className="leading-7">
-            <strong>Zomira World Private Limited</strong> - Full-Stack Team Lead and
-            Technical Project Manager (February 2026 to Present)
+            <strong>Zogiraa (Zomira World Pvt. Ltd.)</strong> — Lead Software
+            Engineer Intern (February 2026 – Present)
           </p>
           <p className="leading-7">
-            Led end-to-end engineering for Zogiraa from planning to production,
-            including team hiring, multi-platform architecture, cloud operations,
-            CI/CD, payment integrations, and secure distributed authentication.
+            Architect and technical lead for a Bihar Government-funded workforce
+            marketplace: 5-component production platform, 8-person engineering
+            team, polyrepo of 4 repositories.
           </p>
           <p className="leading-7">
-            <strong>FIEM ACM Student Chapter</strong> - Core Committee Member
-            (October 2025 to Present)
+            <strong>Gyanoda App</strong> — Co-Founder & Founding Engineer (2024 –
+            Present)
           </p>
           <p className="leading-7">
-            <strong>Internshala</strong> - Student Partner (November 2025 to Present)
+            Shipped React Native + Next.js EdTech platform to Google Play with
+            1,000+ installs; Razorpay freemium/subscription monetization; led a
+            5-person team.
           </p>
           <p className="leading-7">
-            <strong>Xplorica / FIEM</strong> - Working and Core Committee roles
-            (2024 to Present)
+            <strong>FIEM ACM Student Chapter</strong> — Chairperson (2026–2027);
+            Lead Organizer of HackSpire (200+ participants).
           </p>
         </div>
       </section>
@@ -116,58 +119,70 @@ const SaikatTantiEntityPage = () => {
         <h2 className="text-2xl font-semibold">Education</h2>
         <div className="space-y-3 text-[var(--textColor)]/90">
           <p className="leading-7">
-            <strong>Future Institute Of Engineering and Management</strong> -
-            Bachelor of Technology (B.Tech), Computer Engineering (2023 to 2027)
+            <strong>Future Institute of Engineering and Management (FIEM)</strong>{" "}
+            — B.Tech, Computer Science & Engineering (August 2023 – June 2027),
+            CGPA 7.9/10
           </p>
           <p className="leading-7">
-            <strong>Keoratala S.C.M High School</strong> - Higher Secondary,
-            Science (2020 to 2022)
+            <strong>Keoratala S.C.M High School</strong> — Higher Secondary,
+            Science (2022), 79.71%
           </p>
         </div>
       </section>
 
       <section className="mt-10 space-y-3">
-        <h2 className="text-2xl font-semibold">Certifications</h2>
+        <h2 className="text-2xl font-semibold">Selected certifications</h2>
         <ul className="list-disc space-y-2 pl-5 text-[var(--textColor)]/90">
-          <li>Deloitte Australia - Cyber Job Simulation</li>
-          <li>Deloitte Australia - Technology Job Simulation</li>
-          <li>J.P. Morgan - Software Engineering Job Simulation</li>
-          <li>Smart India Hackathon 2024</li>
-          <li>Why Business Analytics As A Career Is Trending and Successful?</li>
+          <li>Gemini Certified University Student — Google for Education</li>
+          <li>Claude 101 & Claude Code 101 — Anthropic</li>
+          <li>
+            Industrial Internship — AI/ML & Generative AI — Ardent Computech
+            (ARDENT/189001)
+          </li>
+          <li>MyGov Campus Ambassador — MeitY, Government of India</li>
         </ul>
       </section>
 
       <section className="mt-10 space-y-3">
-        <h2 className="text-2xl font-semibold">Top Skills</h2>
+        <h2 className="text-2xl font-semibold">Core skills</h2>
         <p className="leading-7 text-[var(--textColor)]/90">
-          Context API, Google Apps Script, GitHub, React.js, Next.js, Node.js,
-          TypeScript, MongoDB, and secure web platform development.
+          Next.js, React.js, React Native, Node.js, TypeScript, MongoDB,
+          PostgreSQL, Redis, Python, Docker, AWS, Tailwind CSS.
         </p>
       </section>
 
       <section className="mt-10 space-y-3">
         <h2 className="text-2xl font-semibold">Languages</h2>
         <p className="leading-7 text-[var(--textColor)]/90">
-          English (Professional Working), Bengali (Native or Bilingual).
+          Bengali (Native), Hindi (Fluent), English (Professional).
         </p>
       </section>
 
       <section className="mt-10 space-y-3">
-        <h2 className="text-2xl font-semibold">Location and Contact</h2>
+        <h2 className="text-2xl font-semibold">Location and contact</h2>
         <p className="leading-7 text-[var(--textColor)]/90">
-          Kolkata, West Bengal, India.
+          Kolkata, West Bengal, India · Open to remote / hybrid across India
+          (Bengaluru, Hyderabad, Kolkata).
         </p>
         <p className="leading-7 text-[var(--textColor)]/90">
-          Mobile: 9883584060 | Email: saikattanti2005@gmail.com
+          Email:{" "}
+          <a
+            href={Strings.primaryEmailLink}
+            className="underline decoration-[var(--primaryColor)] underline-offset-4"
+          >
+            {Strings.primaryEmail}
+          </a>
+          {" · "}
+          Preferred: Email or LinkedIn DM
         </p>
       </section>
 
       <section className="mt-10">
-        <h2 className="text-2xl font-semibold">Official Profiles</h2>
+        <h2 className="text-2xl font-semibold">Official profiles</h2>
         <ul className="mt-4 space-y-2 text-[var(--textColor)]/90">
           <li>
             <a
-              href="https://github.com/saikattanti"
+              href={Strings.githubLink}
               target="_blank"
               rel="noreferrer"
               className="underline decoration-[var(--primaryColor)] underline-offset-4"
@@ -177,7 +192,7 @@ const SaikatTantiEntityPage = () => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/saikat-tanti-7375b2233/"
+              href={Strings.linkedInLink}
               target="_blank"
               rel="noreferrer"
               className="underline decoration-[var(--primaryColor)] underline-offset-4"
@@ -187,7 +202,7 @@ const SaikatTantiEntityPage = () => {
           </li>
           <li>
             <a
-              href="https://x.com/TantiSaikat"
+              href={Strings.twitterLink}
               target="_blank"
               rel="noreferrer"
               className="underline decoration-[var(--primaryColor)] underline-offset-4"
@@ -197,7 +212,7 @@ const SaikatTantiEntityPage = () => {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/saikattanti.dev/"
+              href={Strings.instagramLink}
               target="_blank"
               rel="noreferrer"
               className="underline decoration-[var(--primaryColor)] underline-offset-4"
@@ -207,12 +222,22 @@ const SaikatTantiEntityPage = () => {
           </li>
           <li>
             <a
-              href="https://telegram.me/SaikatTanti"
+              href={Strings.facebookLink}
               target="_blank"
               rel="noreferrer"
               className="underline decoration-[var(--primaryColor)] underline-offset-4"
             >
-              Telegram
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://orcid.org/0009-0005-6979-1503"
+              target="_blank"
+              rel="noreferrer"
+              className="underline decoration-[var(--primaryColor)] underline-offset-4"
+            >
+              ORCID
             </a>
           </li>
         </ul>

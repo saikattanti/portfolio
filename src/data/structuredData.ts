@@ -4,104 +4,97 @@ const structuredData = {
     {
       "@type": "Person",
       "@id": "https://www.saikattanti.dev/#person",
-      "name": "Saikat Tanti",
-      "alternateName": ["saikattanti", "Saikat"],
-      "description":
-        "Full Stack Developer and Software Engineer specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies.",
-      "url": "https://www.saikattanti.dev/",
-      "mainEntityOfPage": {
-        "@id": "https://www.saikattanti.dev/saikat-tanti#profile"
+      name: "Saikat Tanti",
+      alternateName: ["saikattanti", "Saikat"],
+      description:
+        "Full Stack Software Engineer and Co-Founder based in Kolkata. Builds production web and mobile apps with React, Next.js, React Native, and Node.js. Co-Founder of Gyanoda (1,000+ Play Store installs). Lead Software Engineer Intern at Zogiraa.",
+      url: "https://www.saikattanti.dev/",
+      mainEntityOfPage: {
+        "@id": "https://www.saikattanti.dev/saikat-tanti#profile",
       },
-      "image": {
+      image: {
         "@type": "ImageObject",
         "@id": "https://www.saikattanti.dev/#person-image",
-        "url": "https://www.saikattanti.dev/my-image.png",
-        "caption": "Saikat Tanti"
+        url: "https://www.saikattanti.dev/my-image.png",
+        caption: "Saikat Tanti",
       },
-      "jobTitle": "Full Stack Developer",
-      "worksFor": {
-        "@id": "https://www.saikattanti.dev/#organization"
-      },
-      "affiliation": {
+      jobTitle: "Full Stack Software Engineer",
+      worksFor: [
+        {
+          "@type": "Organization",
+          name: "Zomira World Pvt. Ltd.",
+          url: "https://zogiraa.com",
+        },
+        {
+          "@type": "Organization",
+          name: "Gyanoda App",
+        },
+      ],
+      affiliation: {
         "@type": "CollegeOrUniversity",
-        "name": "Future Institute of Engineering and Management",
-        "sameAs": "https://fiem.edu.in/"
+        name: "Future Institute of Engineering and Management",
+        sameAs: "https://fiem.edu.in/",
       },
-      "address": {
+      address: {
         "@type": "PostalAddress",
-        "addressCountry": "IN",
-        "addressLocality": "Kolkata",
-        "addressRegion": "West Bengal"
+        addressCountry: "IN",
+        addressLocality: "Kolkata",
+        addressRegion: "West Bengal",
       },
-      "knowsLanguage": [
-        "English",
-        "Bengali"
-      ],
-      "sameAs": [
+      knowsLanguage: ["English", "Bengali", "Hindi"],
+      sameAs: [
         "https://github.com/saikattanti",
-        "https://www.linkedin.com/in/saikat-tanti-7375b2233/",
-        "https://x.com/TantiSaikat",
-        "https://www.instagram.com/saikattanti.dev/",
-        "https://telegram.me/SaikatTanti"
+        "https://www.linkedin.com/in/saikat-tanti/",
+        "https://twitter.com/TantiSaikat",
+        "https://www.instagram.com/saikattanti.dev",
+        "https://www.facebook.com/saikat.tanti.official",
+        "https://orcid.org/0009-0005-6979-1503",
+        "https://dev.to/saikattanti",
       ],
-      "knowsAbout": [
-        "JavaScript",
-        "TypeScript",
-        "React",
+      knowsAbout: [
+        "React.js",
         "Next.js",
+        "React Native",
         "Node.js",
-        "Express.js",
+        "TypeScript",
         "MongoDB",
         "PostgreSQL",
-        "Cybersecurity",
-        "Full Stack Development",
-        "Web Development"
-      ]
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.saikattanti.dev/#organization",
-      "name": "Saikat Tanti",
-      "url": "https://www.saikattanti.dev/",
-      "logo": "https://www.saikattanti.dev/favicon-64x64.svg",
-      "sameAs": [
-        "https://github.com/saikattanti",
-        "https://www.linkedin.com/in/saikat-tanti-7375b2233/",
-        "https://x.com/TantiSaikat"
-      ]
+        "Redis",
+        "Python",
+        "PyTorch",
+        "Docker",
+        "AWS",
+        "Tailwind CSS",
+        "REST API Design",
+        "System Design",
+      ],
+      email: "mailto:saikattanti2005@gmail.com",
     },
     {
       "@type": "WebSite",
       "@id": "https://www.saikattanti.dev/#website",
-      "name": "Saikat Tanti Portfolio",
-      "url": "https://www.saikattanti.dev/",
-      "inLanguage": "en",
-      "publisher": {
-        "@id": "https://www.saikattanti.dev/#organization"
-      }
-    },
-    {
-      "@type": "ProfilePage",
-      "@id": "https://www.saikattanti.dev/#profile",
-      "url": "https://www.saikattanti.dev/",
-      "name": "Saikat Tanti",
-      "mainEntity": {
-        "@id": "https://www.saikattanti.dev/#person"
-      }
+      name: "Saikat Tanti Portfolio",
+      url: "https://www.saikattanti.dev/",
+      inLanguage: "en",
+      description:
+        "Portfolio of Saikat Tanti — Full Stack Engineer & Co-Founder.",
+      publisher: {
+        "@id": "https://www.saikattanti.dev/#person",
+      },
     },
     {
       "@type": "ProfilePage",
       "@id": "https://www.saikattanti.dev/saikat-tanti#profile",
-      "url": "https://www.saikattanti.dev/saikat-tanti",
-      "name": "About Saikat Tanti",
-      "isPartOf": {
-        "@id": "https://www.saikattanti.dev/#website"
+      url: "https://www.saikattanti.dev/saikat-tanti",
+      name: "About Saikat Tanti",
+      isPartOf: {
+        "@id": "https://www.saikattanti.dev/#website",
       },
-      "mainEntity": {
-        "@id": "https://www.saikattanti.dev/#person"
-      }
-    }
-  ]
-}
+      mainEntity: {
+        "@id": "https://www.saikattanti.dev/#person",
+      },
+    },
+  ],
+};
 
-export default structuredData
+export default structuredData;

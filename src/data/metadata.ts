@@ -1,9 +1,11 @@
 import { Metadata } from "next";
 
+/** Alternate metadata helper — root layout.tsx is the live source of truth. */
 export const metadata: Metadata = {
   title: "Saikat Tanti — Full Stack Engineer & Co-Founder",
   description:
-    "Full Stack Engineer and CSE student (B.Tech 2027) building production apps. Co-Founder of Gyanoda (1K+ Play Store), Lead Engineer at Zogiraa (Bihar Gov funded). React, Next.js, Node.js, Python.",
+    "Full Stack Engineer (B.Tech 2027). Co-Founder Gyanoda (1K+ users). Lead Engineer Intern at Zogiraa. React, Next.js, Node.js, React Native. Open to SDE/Full Stack roles.",
+  metadataBase: new URL("https://www.saikattanti.dev"),
   robots: {
     index: true,
     follow: true,
@@ -14,48 +16,5 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  icons: [
-    {
-      url: "/favicon-16x16.svg",
-      rel: "icon",
-      sizes: "16x16",
-      type: "image/x-icon",
-    },
-    {
-      url: "/favicon-32x32.svg",
-      rel: "icon",
-      sizes: "32x32",
-      type: "image/x-icon",
-    },
-    {
-      url: "/favicon-48x48.svg",
-      rel: "icon",
-      sizes: "48x48",
-      type: "image/x-icon",
-    },
-    {
-      url: "/favicon-64x64.svg",
-      rel: "icon",
-      sizes: "64x64",
-      type: "image/x-icon",
-    },
-  ],
-  keywords: [
-    "Full Stack Developer",
-    "React",
-    "Next.js",
-    "Node.js",
-    "TypeScript",
-    "Python",
-    "AI Engineer",
-    "SDE Intern",
-    "Kolkata",
-    "India",
-    "Saikat Tanti",
-  ],
-  openGraph: {
-    url: "https://saikattanti.dev",
-    type: "website",
   },
 };

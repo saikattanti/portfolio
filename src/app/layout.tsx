@@ -28,42 +28,26 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Saikat Tanti - Full Stack Developer | Software Engineer | Cybersecurity Expert",
-    template: "%s | Saikat Tanti - Software Engineer"
+    default: "Saikat Tanti — Full Stack Engineer & Co-Founder",
+    template: "%s | Saikat Tanti",
   },
   description:
-    "Saikat Tanti is a proficient Full Stack Developer and Software Engineer from India, specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies. Available for freelance projects and consultations.",
+    "Full Stack Engineer (B.Tech 2027). Co-Founder Gyanoda (1K+ users). Lead Engineer Intern at Zogiraa. React, Next.js, Node.js, React Native. Open to SDE/Full Stack roles.",
   keywords: [
     "saikat tanti",
     "saikattanti",
-    "full stack developer",
-    "software engineer",
+    "full stack engineer",
+    "full stack developer intern",
+    "sde intern india",
     "react developer",
     "nextjs developer",
+    "react native developer",
     "nodejs developer",
-    "cybersecurity expert",
-    "web developer india",
-    "freelance developer",
-    "javascript developer",
     "typescript developer",
-    "ui ux designer",
-    "seo expert",
-    "graphics designer",
-    "portfolio website",
-    "web development services",
-    "mobile app developer",
-    "flutter developer",
-    "api development",
-    "database design",
-    "cloud computing",
-    "aws developer",
-    "docker expert",
-    "devops engineer",
-    "tech consultant",
-    "indian developer",
-    "bengal developer",
-    "software solutions",
-    "custom web applications"
+    "gyanoda",
+    "zogiraa",
+    "kolkata developer",
+    "fiem",
   ],
   authors: [{ name: "Saikat Tanti", url: "https://www.saikattanti.dev" }],
   creator: "Saikat Tanti",
@@ -79,31 +63,32 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_IN",
     url: "https://www.saikattanti.dev",
-    title: "Saikat Tanti - Full Stack Developer | Software Engineer",
-    description: "Professional Full Stack Developer and Software Engineer specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies.",
+    title: "Saikat Tanti — Full Stack Engineer & Co-Founder",
+    description:
+      "Full Stack Engineer & Co-Founder. Gyanoda (1,000+ Play Store installs). Lead Engineer Intern at Bihar Government-funded Zogiraa. React · Next.js · Node.js · React Native.",
     siteName: "Saikat Tanti Portfolio",
     images: [
       {
-        url: "/images/placeholder.png",
+        url: "/my-image.png",
         width: 1200,
-        height: 630,
-        alt: "Saikat Tanti - Full Stack Developer",
+        height: 1200,
+        alt: "Saikat Tanti — Full Stack Engineer & Co-Founder",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Saikat Tanti - Full Stack Developer | Software Engineer",
-    description: "Professional Full Stack Developer and Software Engineer specializing in React, Next.js, Node.js, cybersecurity, and modern web technologies.",
+    title: "Saikat Tanti — Full Stack Engineer & Co-Founder",
+    description:
+      "Full Stack Engineer & Co-Founder. Gyanoda (1K+ installs). Lead Engineer Intern at Zogiraa. Open to SDE / Full Stack roles.",
     creator: "@TantiSaikat",
-    images: ["/images/placeholder.png"],
+    images: ["/my-image.png"],
   },
   robots: {
     index: true,
     follow: true,
-    nocache: true,
     googleBot: {
       index: true,
       follow: true,
@@ -157,7 +142,10 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <html lang="en" className={poppins.className}>
       <head>
-        <meta name="impact-site-verification" content="15c13d82-8305-444a-b9bc-c5ac5fbe7ff1" />
+        <meta
+          name="impact-site-verification"
+          content="15c13d82-8305-444a-b9bc-c5ac5fbe7ff1"
+        />
         <script
           type="application/ld+json"
           suppressHydrationWarning
