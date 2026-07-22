@@ -3,89 +3,63 @@ import { IServiceItem } from "@/types";
 const services: IServiceItem[] = [
   {
     id: 1,
-    title: "Mobile App Development",
+    title: "Full Stack Web Development",
     icons: [
-      "/skills/socket-io.png",
-      "/skills/dart.svg",
-      "/skills/flutter.svg",
-      "/skills/getx.png",
-      "/skills/firebase.svg",
+      "/skills/nextjs.png",
+      "/skills/react.svg",
+      "/skills/nodejs.svg",
+      "/skills/typescript.svg",
+      "/skills/postgresql.svg",
     ],
     shortDescription:
-      "I create engaging mobile applications for your audience.",
+      "End-to-end web apps with auth, payments, and production deployment.",
     description:
-      "I create captivating mobile apps from concept to deployment for iOS and Android. Using cutting-edge technologies, I ensure seamless performance, intuitive interfaces, and robust functionality that align with your business goals. Enjoy a flawless user experience and outstanding results.",
+      "I build production web applications with Next.js, React, Node.js, and PostgreSQL or MongoDB — including authentication, payments, admin dashboards, and deployment on Vercel. Proof: ShopSpire (hackspire.shop) and Zogiraa employer/admin dashboards.",
   },
   {
     id: 2,
-    title: "Web Development",
+    title: "React Native App Development",
     icons: [
-      "/skills/Node.js_logo.svg",
-      "/skills/nextjs.png",
       "/skills/react.svg",
-      "/skills/html.svg",
-      "/skills/css.svg",
+      "/skills/nodejs.svg",
+      "/skills/mongodb.svg",
+      "/skills/firebase.svg",
+      "/skills/typescript.svg",
     ],
-    shortDescription: "I build visually stunning and user-friendly websites.",
+    shortDescription:
+      "Cross-platform mobile apps with real-time features and payments.",
     description:
-      "I deliver stunning, user-friendly websites to establish your online presence. From simple sites to complex e-commerce platforms, I provide tailored solutions using the latest frameworks and technologies for a seamless, responsive, and SEO-friendly browsing experience. Enhance your online identity with quality.",
+      "I ship React Native (Expo) apps for Android with real-time updates, payment gating, and backend integration. Proof: Gyanoda App (1,000+ Play Store installs) and the Zogiraa worker app.",
   },
   {
     id: 3,
-    title: "Backend Development",
+    title: "Backend API Development",
     icons: [
-      "/skills/socket-io.png",
-      "/skills/docker.png",
       "/skills/nodejs.svg",
       "/skills/express.svg",
-      "/skills/aws.svg",
+      "/skills/mongodb.svg",
+      "/skills/redis.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     ],
-    shortDescription: "I create robust and scalable backend infrastructures.",
+    shortDescription:
+      "Scalable REST APIs with auth, caching, and real-time events.",
     description:
-      "I enhance digital applications with robust, scalable backend infrastructures. I develop efficient database structures, APIs, and configure servers for optimal performance, security, and scalability, ensuring your applications handle high traffic and complex data management seamlessly. Rely on strong backend solutions.",
+      "I design Node.js/Express and FastAPI backends with JWT auth, Redis caching and rate-limiting, Socket.io events, and payment gateways. Proof: Zogiraa backend with Cashfree, Redis, and Socket.io in production.",
   },
   {
     id: 4,
-    title: "Graphics Design",
+    title: "LLM API Integration",
     icons: [
-      "/skills/DaVinci_Resolve_Studio.png",
-      "/skills/illustrator.png",
-      "/skills/photoshop.png",
-      "/skills/aftereffects.svg",
-      "/skills/canva.png",
+      "/skills/react.svg",
+      "/skills/nodejs.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      "/skills/typescript.svg",
+      "/skills/javascript.svg",
     ],
     shortDescription:
-      "I craft visuals that captivate, communicate, and inspire.",
+      "GPT-4o, Claude, and Gemini features inside real products.",
     description:
-      "I work closely with clients to create visually stunning designs that tell a story and engage audiences. With a strong foundation in visual storytelling, branding, and design principles, I ensure that each project not only looks great but also achieves your brand's objectives. Elevate your brand's presence with creative, impactful design solutions.",
-  },
-  {
-    id: 5,
-    title: "DevOps",
-    icons: [
-      "/skills/docker.svg",
-      "/skills/kubernetes.svg",
-      "/skills/aws.svg",
-      "/skills/jenkins.svg",
-      "/skills/terraform.svg",
-    ],
-    shortDescription: "I streamline development and operations processes.",
-    description:
-      "I streamline development and operations processes through effective DevOps practices. I implement continuous integration and deployment pipelines, manage cloud infrastructure, and use containerization to ensure efficient, reliable, and scalable software delivery. Improve your workflow with DevOps solutions.",
-  },
-  {
-    id: 6,
-    title: "Database Management",
-    icons: [
-      "/skills/mysql.svg",
-      "/skills/postgresql.svg",
-      "/skills/mongodb.svg",
-      "/skills/PHP-logo.svg",
-      "/skills/sqlite.svg",
-    ],
-    shortDescription: "I manage and optimize your database systems.",
-    description:
-      "I manage and optimize your database systems for performance, reliability, and scalability. With expertise in SQL and NoSQL databases, I design schemas, write complex queries, and implement best practices for data integrity and security. Ensure your data is managed effectively and efficiently.",
+      "I integrate LLM APIs into web apps for semantic analysis and AI-assisted workflows — not demos only. Proof: Resume Analyzer using GPT-4o and Claude 3.5 Sonnet via Puter AI SDK.",
   },
 ];
 

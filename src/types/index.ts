@@ -78,6 +78,8 @@ export interface ICertificationItem {
   category: string;
   duration?: string;
   project?: string;
+  /** When false, hidden from homepage cert section (still kept in data). */
+  keepOnHomepage?: boolean;
 }
 
 export interface ILeadershipItem {

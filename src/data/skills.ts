@@ -1,13 +1,45 @@
-import { ISkillListItem, SkillLevel } from "@/types";
+import { ISkillListItem } from "@/types";
 
 const skills: ISkillListItem[] = [
   {
+    title: "Core Stack",
+    items: [
+      { title: "Next.js", icon: "/skills/nextjs.png" },
+      { title: "React.js", icon: "/skills/react.svg" },
+      { title: "Node.js", icon: "/skills/nodejs.svg" },
+      { title: "TypeScript", icon: "/skills/typescript.svg" },
+      { title: "React Native (Expo)", icon: "/skills/react.svg" },
+      { title: "MongoDB", icon: "/skills/mongodb.svg" },
+      { title: "PostgreSQL", icon: "/skills/postgresql.svg" },
+      { title: "Redis", icon: "/skills/redis.svg" },
+      {
+        title: "Python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      },
+      {
+        title: "Docker",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+      },
+      { title: "AWS (S3, Amplify)", icon: "/skills/aws.svg" },
+      {
+        title: "Tailwind CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+    ],
+  },
+  {
     title: "Languages",
     items: [
-      { title: "JavaScript (ES6+)", icon: "/skills/javascript.svg" },
       { title: "TypeScript", icon: "/skills/typescript.svg" },
-      { title: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-      { title: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
+      { title: "JavaScript (ES6+)", icon: "/skills/javascript.svg" },
+      {
+        title: "Python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      },
+      {
+        title: "Java",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+      },
       { title: "HTML5", icon: "/skills/html.svg" },
       { title: "CSS3", icon: "/skills/css.svg" },
     ],
@@ -17,20 +49,46 @@ const skills: ISkillListItem[] = [
     items: [
       { title: "React.js", icon: "/skills/react.svg" },
       { title: "Next.js", icon: "/skills/nextjs.png" },
-      { title: "Vue.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" },
-      { title: "React Native (Expo)", icon: "/skills/react.svg" },
-      { title: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
-      { title: "Framer Motion", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg" },
-      { title: "GSAP", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/greensock.svg" },
-      { title: "Three.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" },
-      { title: "Zustand", icon: "https://ui-avatars.com/api/?name=Zustand&background=random&color=fff&rounded=true&format=svg" },
+      {
+        title: "Vue.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+      },
+      {
+        title: "Tailwind CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      { title: "Zustand", icon: "/skills/redux.svg" },
       { title: "Redux", icon: "/skills/redux.svg" },
-      { title: "ShadCN", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/shadcnui.svg" },
-      { title: "Radix UI", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/radixui.svg" },
-      { title: "Reactbits", icon: "https://ui-avatars.com/api/?name=Reactbits&background=random&color=fff&rounded=true&format=svg" },
-      { title: "MagicUI", icon: "https://ui-avatars.com/api/?name=MagicUI&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Lucide React", icon: "https://ui-avatars.com/api/?name=Lucide&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Recharts", icon: "https://ui-avatars.com/api/?name=Recharts&background=random&color=fff&rounded=true&format=svg" },
+      {
+        title: "Framer Motion",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
+      },
+      {
+        title: "ShadCN / Radix UI",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/shadcnui.svg",
+      },
+    ],
+  },
+  {
+    title: "Mobile",
+    items: [
+      { title: "React Native", icon: "/skills/react.svg" },
+      {
+        title: "Expo",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg",
+      },
+      {
+        title: "BroadcastReceiver",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android.svg",
+      },
+      {
+        title: "NotificationListener",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android.svg",
+      },
+      {
+        title: "WorkManager",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android.svg",
+      },
     ],
   },
   {
@@ -38,23 +96,26 @@ const skills: ISkillListItem[] = [
     items: [
       { title: "Node.js", icon: "/skills/nodejs.svg" },
       { title: "Express.js", icon: "/skills/express.svg" },
-      { title: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
-      { title: "Django", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" },
-      { title: "REST APIs", icon: "https://ui-avatars.com/api/?name=REST+APIs&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Socket.io", icon: "/skills/socket-io.png" },
-      { title: "JWT", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/jsonwebtokens.svg" },
-      { title: "OAuth", icon: "https://ui-avatars.com/api/?name=OAuth&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Bcrypt", icon: "https://ui-avatars.com/api/?name=Bcrypt&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Prisma ORM", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/prisma.svg" },
-      { title: "NestJS (familiar)", icon: "/skills/nestjs.svg" },
-    ],
-  },
-  {
-    title: "Android",
-    items: [
-      { title: "BroadcastReceiver", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android.svg" },
-      { title: "NotificationListenerService", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android.svg" },
-      { title: "WorkManager", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/android.svg" },
+      {
+        title: "FastAPI",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+      },
+      {
+        title: "Django",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
+      },
+      {
+        title: "Socket.io",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
+      },
+      {
+        title: "JWT / OAuth",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/jsonwebtokens.svg",
+      },
+      {
+        title: "Prisma ORM",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/prisma.svg",
+      },
     ],
   },
   {
@@ -63,88 +124,80 @@ const skills: ISkillListItem[] = [
       { title: "MongoDB", icon: "/skills/mongodb.svg" },
       { title: "PostgreSQL (Neon)", icon: "/skills/postgresql.svg" },
       { title: "Redis", icon: "/skills/redis.svg" },
-      { title: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" },
+      {
+        title: "Supabase",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+      },
       { title: "Firebase", icon: "/skills/firebase.svg" },
-      { title: "Appwrite", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/appwrite/appwrite-original.svg" },
-      { title: "MySQL", icon: "/skills/mysql.svg" },
+      {
+        title: "Appwrite",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/appwrite/appwrite-original.svg",
+      },
     ],
   },
   {
     title: "AI & ML",
     items: [
-      { title: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-      { title: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" },
-      { title: "Hugging Face Transformers", icon: "https://ui-avatars.com/api/?name=Hugging+Face&background=random&color=fff&rounded=true&format=svg" },
-      { title: "DistilBERT", icon: "https://ui-avatars.com/api/?name=DistilBERT&background=random&color=fff&rounded=true&format=svg" },
-      { title: "DeBERTa", icon: "https://ui-avatars.com/api/?name=DeBERTa&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Scikit-learn", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" },
-      { title: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" },
-      { title: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
-      { title: "EasyOCR", icon: "https://ui-avatars.com/api/?name=EasyOCR&background=random&color=fff&rounded=true&format=svg" },
-      { title: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
-      { title: "GPT-4o API", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" },
-      { title: "Claude API (Anthropic)", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/anthropic.svg" },
-      { title: "Gemini API (Google)", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/google.svg" },
-      { title: "Puter AI SDK", icon: "https://ui-avatars.com/api/?name=Puter&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Prompt Engineering", icon: "https://ui-avatars.com/api/?name=Prompt&background=random&color=fff&rounded=true&format=svg" },
+      {
+        title: "PyTorch",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
+      },
+      {
+        title: "Hugging Face Transformers",
+        icon: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+      },
+      {
+        title: "Scikit-learn",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+      },
+      {
+        title: "FastAPI (ML serving)",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+      },
+      {
+        title: "GPT-4o / Claude / Gemini APIs",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg",
+      },
     ],
   },
   {
     title: "Cloud & DevOps",
     items: [
       { title: "AWS (S3, Amplify)", icon: "/skills/aws.svg" },
-      { title: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" },
-      { title: "Render", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/render.svg" },
-      { title: "Cloudflare", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" },
-      { title: "Docker", icon: "/skills/docker.png" },
-      { title: "Git", icon: "/skills/git.svg" },
-      { title: "GitHub", icon: "/skills/github.svg" },
-      { title: "CI/CD", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/githubactions.svg" },
-      { title: "cPanel", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cpanel.svg" },
-      { title: "Kubernetes (familiar)", icon: "/skills/kubernetes.svg" },
+      {
+        title: "Vercel",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+      },
+      {
+        title: "Render",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/render.svg",
+      },
+      {
+        title: "Cloudflare",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg",
+      },
+      {
+        title: "Docker",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+      },
+      { title: "Git / GitHub", icon: "/skills/git.svg" },
     ],
   },
   {
     title: "Payments & APIs",
     items: [
-      { title: "Razorpay", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/razorpay.svg" },
-      { title: "Cashfree", icon: "https://ui-avatars.com/api/?name=Cashfree&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Fast2SMS", icon: "https://ui-avatars.com/api/?name=Fast2SMS&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Cloudinary", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cloudinary.svg" },
-      { title: "ImageKit", icon: "https://ui-avatars.com/api/?name=ImageKit&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Nodemailer", icon: "https://ui-avatars.com/api/?name=Nodemailer&background=random&color=fff&rounded=true&format=svg" },
-    ],
-  },
-  {
-    title: "Blockchain",
-    items: [
-      { title: "Stellar", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/stellar.svg" },
-      { title: "Soroban Smart Contracts", icon: "https://ui-avatars.com/api/?name=Soroban&background=random&color=fff&rounded=true&format=svg" },
-      { title: "XLM", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/stellar.svg" },
-      { title: "USDC", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/usdcoin.svg" },
-    ],
-  },
-  {
-    title: "Security",
-    items: [
-      { title: "Web Application Penetration Testing (WAPT)", icon: "https://ui-avatars.com/api/?name=WAPT&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Burp Suite", icon: "https://ui-avatars.com/api/?name=Burp&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Wireshark", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/wireshark.svg" },
-      { title: "Nmap", icon: "https://ui-avatars.com/api/?name=Nmap&background=random&color=fff&rounded=true&format=svg" },
-      { title: "OWASP", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/owasp.svg" },
-      { title: "SSL/TLS", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/letsencrypt.svg" },
-      { title: "DDoS Protection", icon: "https://ui-avatars.com/api/?name=DDoS&background=random&color=fff&rounded=true&format=svg" },
-    ],
-  },
-  {
-    title: "Tools",
-    items: [
-      { title: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" },
-      { title: "Claude Code", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/anthropic.svg" },
-      { title: "Cursor", icon: "https://ui-avatars.com/api/?name=Cursor&background=random&color=fff&rounded=true&format=svg" },
-      { title: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
-      { title: "GitHub Actions", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/githubactions.svg" },
-      { title: "Figma (basic)", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+      {
+        title: "Razorpay",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/razorpay.svg",
+      },
+      {
+        title: "Cashfree",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/stripe.svg",
+      },
+      {
+        title: "Cloudinary",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cloudinary.svg",
+      },
     ],
   },
 ];
