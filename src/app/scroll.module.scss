@@ -1,51 +1,33 @@
 .topToBottom {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 1.25rem;
+  right: 1.25rem;
   z-index: 20;
 }
 
 .btnStyle {
-  background-color: var(--bgColor);
-  border: 2px solid var(--whiteColor);
-  border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
-  color: var(--whiteColor);
-  cursor: pointer;
-  animation: upDown 3s ease-in-out infinite;
-  transition: all 0.25s ease-in-out;
-
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+  min-width: 3rem;
+  height: 3rem;
+  padding: 0 1rem;
+  background-color: var(--textColor10);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--borderRadius);
+  color: var(--textColor);
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
 .btnStyle:hover {
-  animation: none;
-  background-color: var(--whiteColor);
-  color: var(--bgColor);
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  color: #fff;
 }
 
 .iconStyle {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-@keyframes upDown {
-  0% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(8px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(-8px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  width: 1.15rem;
+  height: 1.15rem;
 }
