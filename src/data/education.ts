@@ -5,7 +5,7 @@ const education: IEducationItem[] = [
     degree: "Bachelor of Technology (B.Tech) — Computer Science & Engineering",
     institution: "Future Institute of Engineering and Management (FIEM)",
     location: "Kolkata, West Bengal, India",
-    duration: "August 2023 – June 2027",
+    duration: "August 2023 – July 2027",
     cgpa: "7.9 / 10",
     relevantCoursework: [
       "Data Structures & Algorithms",
@@ -17,7 +17,7 @@ const education: IEducationItem[] = [
       "Object Oriented Programming",
       "Machine Learning",
     ],
-    status: "4th year (entering July 2026) · Graduating June 2027",
+    status: "Currently in 4th year · Graduating July 2027",
   },
   {
     degree: "Higher Secondary (12th) — Science",

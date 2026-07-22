@@ -120,8 +120,8 @@ const SaikatTantiEntityPage = () => {
         <div className="space-y-3 text-[var(--textColor)]/90">
           <p className="leading-7">
             <strong>Future Institute of Engineering and Management (FIEM)</strong>{" "}
-            — B.Tech, Computer Science & Engineering (August 2023 – June 2027),
-            CGPA 7.9/10
+            — B.Tech, Computer Science & Engineering (August 2023 – July 2027),
+            CGPA 7.9/10 · currently 4th year
           </p>
           <p className="leading-7">
             <strong>Keoratala S.C.M High School</strong> — Higher Secondary,
