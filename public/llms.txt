@@ -19,7 +19,7 @@ B.Tech CSE (FIEM), currently 4th year, graduating July 2027. Open to Full Stack 
 ## Highlights
 - Co-Founder & Founding Engineer, Gyanoda App (1,000+ Google Play installs)
 - Lead Software Engineer Intern, Zogiraa / Zomira World Pvt. Ltd. (Bihar Government-funded workforce marketplace)
-- Chairperson, FIEM ACM Student Chapter; Lead Organizer, HackSpire (200+ participants)
+- Chairperson, FIEM ACM Student Chapter; Lead Organizer, HackSpire '26; Organizer, HackSpire '25 (200+ participants)
 
 ## Primary topics
 - Full stack web development (Next.js, React, Node.js, TypeScript)

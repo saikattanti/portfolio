@@ -117,7 +117,8 @@ const SaikatTantiEntityPage = () => {
           </p>
           <p className="leading-7">
             <strong>FIEM ACM Student Chapter</strong> — Chairperson (2026–2027);
-            Lead Organizer of HackSpire (200+ participants).
+            Lead Organizer of HackSpire &apos;26; Organizer of HackSpire &apos;25
+            (200+ participants).
           </p>
         </div>
       </section>

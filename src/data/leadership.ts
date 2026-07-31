@@ -10,10 +10,17 @@ export const leadership: ILeadershipItem[] = [
   },
   {
     role: "Lead Organizer",
-    organization: "HackSpire (FIEM ACM Annual Hackathon)",
-    duration: "2025 – 2026",
+    organization: "HackSpire '26 (FIEM ACM Annual Hackathon)",
+    duration: "2026",
     description:
-      "Lead organizer of FIEM ACM's flagship annual hackathon with 200+ participants across 2025 and 2026 editions.",
+      "Lead organizer of FIEM ACM's flagship annual hackathon (HackSpire '26), expected 250+ participants.",
+  },
+  {
+    role: "Organizer",
+    organization: "HackSpire '25 (FIEM ACM Annual Hackathon)",
+    duration: "2025",
+    description:
+      "Organizer of HackSpire '25 — FIEM ACM's flagship annual hackathon with 200+ participants.",
   },
   {
     role: "Tech Lead",
