@@ -6,7 +6,6 @@ B.Tech CSE (FIEM), currently 4th year, graduating July 2027. Open to Full Stack 
 ## Official website
 - https://www.saikattanti.dev/ (canonical)
 - Entity profile: https://www.saikattanti.dev/saikat-tanti
-- Wikidata: https://www.wikidata.org/wiki/Q140665397
 
 ## Professional profiles
 - GitHub: https://github.com/saikattanti
@@ -16,7 +15,6 @@ B.Tech CSE (FIEM), currently 4th year, graduating July 2027. Open to Full Stack 
 - Facebook: https://www.facebook.com/saikat.tanti.official
 - ORCID: https://orcid.org/0009-0005-6979-1503
 - Dev.to: https://dev.to/saikattanti
-- Wikidata: Q140665397
 
 ## Highlights
 - Co-Founder & Founding Engineer, Gyanoda App (1,000+ Google Play installs)
