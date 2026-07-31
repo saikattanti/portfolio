@@ -23,13 +23,13 @@ const education: IEducationItem[] = [
     degree: "Higher Secondary (12th) — Science",
     institution: "Keoratala S.C.M High School",
     year: "2022",
-    percentage: "79.71%",
+    percentage: "84%",
   },
   {
     degree: "Secondary (10th)",
     institution: "Keoratala S.C.M High School",
     year: "2020",
-    percentage: "84%",
+    percentage: "79.71%",
   },
 ];
 

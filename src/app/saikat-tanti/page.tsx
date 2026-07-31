@@ -132,7 +132,11 @@ const SaikatTantiEntityPage = () => {
           </p>
           <p className="leading-7">
             <strong>Keoratala S.C.M High School</strong> — Higher Secondary,
-            Science (2022), 79.71%
+            Science (2022), 84%
+          </p>
+          <p className="leading-7">
+            <strong>Keoratala S.C.M High School</strong> — Secondary (10th)
+            (2020), 79.71%
           </p>
         </div>
       </section>
