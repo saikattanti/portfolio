@@ -17,12 +17,19 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: "/my-image.png",
+        url: "/og.png",
         width: 1200,
-        height: 1200,
-        alt: "Saikat Tanti",
+        height: 630,
+        alt: "Saikat Tanti — Full Stack Engineer & Co-Founder",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Saikat Tanti | Full Stack Engineer & Co-Founder",
+    description:
+      "Full Stack Engineer & Co-Founder based in Kolkata. Co-founded Gyanoda; Lead Engineer Intern at Bihar Government-funded Zogiraa.",
+    images: ["/og.png"],
   },
 };
 

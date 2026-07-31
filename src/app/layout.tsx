@@ -71,9 +71,9 @@ export const metadata: Metadata = {
     siteName: "Saikat Tanti Portfolio",
     images: [
       {
-        url: "/my-image.png",
+        url: "/og.png",
         width: 1200,
-        height: 1200,
+        height: 630,
         alt: "Saikat Tanti — Full Stack Engineer & Co-Founder",
       },
     ],
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     description:
       "Full Stack Engineer & Co-Founder. Gyanoda (1K+ installs). Lead Engineer Intern at Zogiraa. Open to SDE / Full Stack roles.",
     creator: "@TantiSaikat",
-    images: ["/my-image.png"],
+    images: ["/og.png"],
   },
   robots: {
     index: true,
